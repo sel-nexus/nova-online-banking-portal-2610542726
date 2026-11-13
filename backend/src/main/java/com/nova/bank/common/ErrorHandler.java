@@ -22,7 +22,7 @@ public class ErrorHandler {
   return ResponseEntity.badRequest().body(new ErrorBody(400,"Please check the required fields.",errors,Instant.now()));
  }
  /** Reject malformed JSON without exposing parser details. */
- @ExceptionHandler({HttpMessageNotReadableException.class, IllegalArgumentException.class}) public ResponseEntity<ErrorBody> malformed(Exception e) { return ResponseEntity.badRequest().body(body(400,"Invalid request.")); }
+ @ExceptionHandler({HttpMessageNotReadableException.class, IllegalArgumentException.class, org.springframework.web.method.annotation.MethodArgumentTypeMismatchException.class}) public ResponseEntity<ErrorBody> malformed(Exception e) { return ResponseEntity.badRequest().body(body(400,"Invalid request.")); }
  /** Keep database constraints private. */
  @ExceptionHandler(DataIntegrityViolationException.class) public ResponseEntity<ErrorBody> conflict(Exception e) { return ResponseEntity.status(409).body(body(409,"Request conflicts with existing data.")); }
  /** Deny privileged operations with safe guidance. */

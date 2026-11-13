@@ -1,0 +1,62 @@
+<section aria-labelledby="activity-title" [attr.aria-busy]="loading()">
+  <a routerLink="/accounts">Back to Accounts Overview</a>
+  @if (loading() && !data()) {
+    <h1 id="activity-title">Account activity</h1>
+    <p role="status">Loading account activity…</p>
+    <div class="skeleton" aria-hidden="true"></div>
+  } @else if (error()) {
+    <div role="alert" class="async-state"><h1 id="activity-title">{{error()}}</h1><button (click)="load()">Retry</button></div>
+  }
+  @if (!error() && data(); as account) {
+    <div class="page-heading"><div><h1 id="activity-title">{{account.accountName}}</h1>
+      <p class="masked-number">{{account.maskedNumber}} · {{account.accountType}} · {{account.currency}}</p>
+      <span class="status-badge">{{account.status}}</span></div>
+      <p class="small muted">Statement download is coming in the next demonstration slice.</p>
+    </div>
+    <dl class="activity-summary">
+      <div><dt>Available balance</dt><dd>PHP {{money(account.availableBalance)}}</dd></div>
+      <div><dt>Current / ledger balance</dt><dd>PHP {{money(account.currentBalance)}}</dd></div>
+      <div><dt>Pending transactions</dt><dd>PHP {{money(account.pendingAmount)}}</dd></div>
+      <div><dt>Annual interest rate</dt><dd>{{account.annualInterestRate ? account.annualInterestRate + '% p.a.' : 'Not applicable'}}</dd></div>
+      <div><dt>Last statement date</dt><dd>{{account.lastStatementDate ? (account.lastStatementDate | date:'d MMM yyyy':'UTC') : 'Not available'}}</dd></div>
+    </dl>
+    <h2>Transactions</h2>
+  }
+  @if (error() !== 'Account Not Available') {
+    <form [formGroup]="form" class="activity-toolbar" (submit)="$event.preventDefault()">
+      <div><label for="txn-search">Search merchant or reference</label><input id="txn-search" formControlName="search" maxlength="255" type="search"></div>
+      <div><label for="txn-range">Date range</label><select id="txn-range" [value]="range()" (change)="setRange($any($event.target).value)"><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="custom">Custom range</option></select></div>
+      <div><label for="txn-direction">Direction</label><select id="txn-direction" formControlName="direction"><option value="">All</option><option value="CREDIT">Money In (Credits)</option><option value="DEBIT">Money Out (Debits)</option></select></div>
+      <div><label for="txn-category">Category</label><select id="txn-category" formControlName="category"><option value="">All Categories</option>@for (category of categories; track category) {<option [value]="category">{{category}}</option>}</select></div>
+      @if (range() === 'custom') {
+        <div><label for="txn-start">Start date (UTC)</label><input id="txn-start" type="date" formControlName="startDate"></div>
+        <div><label for="txn-end">End date (UTC)</label><input id="txn-end" type="date" formControlName="endDate"></div>
+      }
+      <div><label for="txn-size">Rows per page</label><select id="txn-size" formControlName="size"><option [ngValue]="1">1</option><option [ngValue]="20">20</option><option [ngValue]="50">50</option><option [ngValue]="100">100</option></select></div>
+      <button type="button" (click)="reset()">Reset Filters</button>
+    </form>
+  }
+  @if (!error() && data(); as account) {
+
+    @if (loading()) { <p role="status">Loading account activity…</p> }
+    @if (!loading()) {
+    <p role="status">{{account.totalCount}} transactions found</p>
+    @if (account.transactions.length === 0) {
+      <p role="status">No transactions found in this period. Reset filters or broaden your search.</p>
+    } @else {
+      <div class="table-scroll"><table class="activity-table"><caption class="visually-hidden">Account transactions, newest first</caption>
+        <thead><tr><th scope="col">Date</th><th scope="col">Description</th><th scope="col">Category</th><th scope="col">Status</th><th scope="col">Amount</th></tr></thead>
+        <tbody>@for (item of account.transactions; track item.id) {
+          <tr><td>{{item.postedAt | date:'d MMM yyyy':'UTC'}}</td>
+            <td><button class="link" [attr.aria-expanded]="expanded() === item.id" [attr.aria-controls]="'detail-' + item.id" (click)="disclose(item.id)">{{item.description}}</button></td>
+            <td>{{item.category}}</td><td>{{item.status}}</td>
+            <td [class.money-in]="item.direction === 'CREDIT'">{{item.direction === 'CREDIT' ? '+' : '−'}} PHP {{money(item.amount)}}<span class="direction-badge">{{item.direction === 'CREDIT' ? 'Money In' : 'Money Out'}}</span></td>
+          </tr>
+          <tr [hidden]="expanded() !== item.id" [id]="'detail-' + item.id"><td colspan="5" class="transaction-detail"><strong>Reference: {{item.referenceCode}}</strong><p>Posted: <time [attr.datetime]="item.postedAt">{{item.postedAt}}</time> (UTC)</p><p>This is demonstration activity. No real money was moved.</p></td></tr>
+        }</tbody>
+      </table></div>
+    }
+    <nav class="activity-pagination" aria-label="Transaction pagination"><button (click)="page(-1)" [disabled]="form.controls.page.value === 0">Previous</button><span>Page {{form.controls.page.value + 1}}</span><button (click)="page(1)" [disabled]="(form.controls.page.value + 1) * form.controls.size.value >= account.totalCount">Next</button></nav>
+    }
+  }
+</section>

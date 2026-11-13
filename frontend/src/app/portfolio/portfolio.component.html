@@ -60,21 +60,21 @@
                       <dt>Available balance</dt><dd>PHP {{money(account.availableBalance)}}</dd>
                     }
                   </dl>
-                  <a routerLink="/accounts" fragment="account-details-notice" [attr.aria-label]="'View details for ' + account.accountName + ' ' + account.maskedNumber">View details <span aria-hidden="true">→</span></a>
+                  <a [routerLink]="['/accounts', account.id]" [attr.aria-label]="'View details for ' + account.accountName + ' ' + account.maskedNumber">View details <span aria-hidden="true">→</span></a>
                 </article>
               }
             </div>
           </section>
         }
       }
-      <p id="account-details-notice" class="small muted">Account activity and statement downloads will be available in the next demonstration slice.</p>
+      <p id="account-details-notice" class="small muted">Statement downloads will be available in the next demonstration slice.</p>
     }
 
     @if (!overview) {
       <section class="quick-links" aria-labelledby="quick-title">
         <h2 id="quick-title">Quick links</h2>
         <ul>
-          <li><a routerLink="/accounts">View Transactions</a><span class="small muted"> · Choose an account; activity coming next</span></li>
+          <li><a [routerLink]="['/accounts', accounts()[0].id]">View Transactions</a></li>
           <li><a routerLink="/accounts" fragment="account-details-notice">Download Statements</a><span class="small muted"> · Coming next</span></li>
           <li><a routerLink="/home" fragment="recommendations">Explore Products</a></li>
           <li><a routerLink="/home" fragment="offer-previews">Promotions &amp; Offers</a></li>
