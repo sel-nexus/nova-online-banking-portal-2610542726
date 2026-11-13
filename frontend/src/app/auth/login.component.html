@@ -1,0 +1,26 @@
+<main class="login-page">
+ <header class="login-header"><a routerLink="/login" class="brand" aria-label="Nova Bank login">NOVA <span>BANK</span></a><span class="muted">Online Banking Portal</span></header>
+ <section class="login-card" aria-labelledby="login-title">
+  <div class="login-form">
+   <div class="language-row"><label for="language">Language / Wika</label><select id="language" [value]="language()" (change)="language.set($any($event.target).value)"><option value="en">English</option><option value="fil">Filipino</option></select></div>
+   <p class="eyebrow">PERSONAL BANKING</p><h1 id="login-title">{{text('Welcome back.','Maligayang pagbabalik.')}}</h1><p class="muted">{{text('Sign in to your Nova Bank account.','Mag-sign in sa iyong Nova Bank account.')}}</p>
+   <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <label for="username">{{text('User ID','User ID')}}</label><input id="username" name="username" formControlName="username" autocomplete="username" aria-required="true" [attr.aria-invalid]="form.controls.username.touched && form.controls.username.invalid" aria-describedby="username-error">
+    <div id="username-error">@if(form.controls.username.touched && form.controls.username.invalid){<p class="field-error" role="alert">{{text(form.controls.username.hasError('required')?'User ID is required':'User ID must be at most 50 characters','Kinakailangan ang User ID')}}</p>}</div>
+    <label for="password">{{text('Password','Password')}}</label><div class="password-row"><input id="password" name="password" formControlName="password" [type]="shown()?'text':'password'" autocomplete="current-password" aria-required="true" [attr.aria-invalid]="form.controls.password.touched && form.controls.password.invalid" aria-describedby="password-error"><button type="button" (click)="shown.set(!shown())" [attr.aria-pressed]="shown()">{{shown()?text('Hide','Itago'):text('Show','Ipakita')}}</button></div>
+    <div id="password-error">@if(form.controls.password.touched && form.controls.password.invalid){<p class="field-error" role="alert">{{text(form.controls.password.hasError('required')?'Password is required.':'Password must be at most 72 characters','Kinakailangan ang password.')}}</p>}</div>
+    <label class="checkbox"><input type="checkbox" formControlName="remember">{{text('Remember User ID','Tandaan ang User ID')}}</label>
+    @if(error()){<p role="alert" class="field-error">{{error()}}</p>}
+    <button class="primary full" type="submit" [disabled]="busy()">{{busy()?text('Signing in…','Nagsa-sign in…'):text('SIGN IN','MAG-SIGN IN')}}</button>
+   </form>
+   <div class="recovery-links"><button class="link" (click)="openHelp('Forgot User ID',$event)">{{text('Forgot User ID','Nakalimutan ang User ID')}}</button><button class="link" (click)="openHelp('Forgot Password',$event)">{{text('Forgot Password','Nakalimutan ang Password')}}</button></div>
+   <div class="login-links"><button class="link" (click)="openHelp('Security Guidance',$event)">{{text('Security Guidance','Gabay sa Seguridad')}}</button><a routerLink="/contact">{{text('Contact Us','Makipag-ugnayan')}}</a></div>
+  </div>
+  <aside class="login-aside"><lucide-icon [img]="icons.ShieldCheck" size="32" aria-hidden="true"/><h2>Your banking,<br>with clarity.</h2><p class="muted">A secure-session demonstration built around you. No real money moves here.</p>
+   <section class="credentials" aria-labelledby="credentials-title"><p class="eyebrow">WORKSHOP ACCESS</p><h3 id="credentials-title">Demo credentials</h3><p><strong>Miguel</strong><br><code>miguel / demo-only</code></p><p><strong>Rosa</strong><br><code>rosa / demo-only</code></p><p class="small muted">Seeded customers. Demonstration data only.</p></section>
+   <ul class="trust-list"><li><strong>256-Bit SSL Encryption</strong><span>All sessions protected with enterprise encryption standards</span></li><li><strong>Fraud Monitoring Simulation</strong><span>Continuous anomalous activity surveillance</span></li><li><strong>Privacy Protected</strong><span>Strict data privacy in compliance with regional banking regulations</span></li></ul>
+   <p class="small muted">Presentation claims for this demonstration, not external certification. Local development does not provide TLS.</p>
+  </aside>
+ </section><footer class="login-footer">© 2026 Nova Bank · Demonstration only · No affiliation with BPI</footer>
+ <dialog #helpDialog aria-labelledby="help-title" aria-modal="true" (cancel)="$event.preventDefault(); closeHelp()" (click)=" $event.target===helpDialog && closeHelp()"><h2 id="help-title">{{guidance()}}</h2><p>This workshop uses seeded credentials shown on the login card. Account recovery is not available in this demonstration. Never share passwords or financial identifiers. Use the Facilitator Reset to unlock a locked demo account.</p><button autofocus (click)="closeHelp()">Close</button></dialog>
+</main>

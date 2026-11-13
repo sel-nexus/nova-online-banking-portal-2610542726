@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8080}
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+nova:
+  db-name: ${DB_NAME:nova}
+  jwt-secret: ${JWT_SECRET:local-demonstration-only-signing-key-replace-before-deploy}
+  jwt-seconds: ${JWT_SECONDS:86400}
+  cors-origins: ${CORS_ORIGINS:http://localhost:4200}
+  demo-date: ${DEMO_DATE:2026-10-14}
+  seed-on-startup: ${SEED_ON_STARTUP:true}
+  deployment: ${DEPLOYMENT:local}
