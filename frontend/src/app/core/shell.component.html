@@ -1,2 +1,28 @@
-<a class="skip-link" href="#main-content">Skip to content</a><header class="app-header"><a routerLink="/home" class="brand">NOVA <span>BANK</span></a><nav aria-label="Primary"><a routerLink="/home">Home</a></nav><details class="profile"><summary>{{auth.session()?.user?.fullName}}</summary><div><p>{{auth.session()?.user?.username}}</p><p class="small muted">{{auth.session()?.user?.role}}</p><button (click)="auth.logout()">Log out</button></div></details></header><main id="main-content" class="content"><router-outlet/></main>
-<dialog #idleDialog aria-modal="true" aria-labelledby="idle-title" (cancel)="$event.preventDefault(); keepAlive()"><h2 id="idle-title">Are you still there?</h2><p>For your security, you will be signed out in <strong>{{auth.countdown()}}</strong> seconds.</p><p class="small" aria-live="polite">Your session is inactive.</p><div class="dialog-actions"><button class="primary" autofocus (click)="keepAlive()">Keep me signed in</button><button (click)="auth.logout()">Log out now</button></div></dialog>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="app-header">
+  <a routerLink="/home" class="brand">NOVA <span>BANK</span></a>
+  <nav aria-label="Primary">
+    <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+    <a routerLink="/accounts" routerLinkActive="active" ariaCurrentWhenActive="page">Accounts</a>
+  </nav>
+  <form class="global-search" (ngSubmit)="searchAccounts()" role="search">
+    <label class="visually-hidden" for="global-search">Search accounts</label>
+    <input id="global-search" type="search" placeholder="Search accounts" [formControl]="search" name="search">
+    <button type="submit">Search</button>
+  </form>
+  <div class="alerts">
+    <button type="button" (click)="toggleAlerts()" [attr.aria-expanded]="alertsOpen" aria-controls="synthetic-alerts">Alerts <span class="alert-count">1</span></button>
+    @if (alertsOpen) { <div id="synthetic-alerts" class="alert-popover" (keydown.escape)="alertsOpen=false"><p role="status">Synthetic alert: Welcome to the Nova banking demonstration. No live notifications are connected.</p><button (click)="toggleAlerts()">Close alerts</button></div> }
+  </div>
+  <details class="profile" (keydown.escape)="$any($event.currentTarget).open=false">
+    <summary>{{auth.session()?.user?.fullName}}</summary>
+    <div><p>{{auth.session()?.user?.username}}</p><p class="small muted">{{auth.session()?.user?.role}}</p><button (click)="auth.logout()">Log out</button></div>
+  </details>
+</header>
+<main id="main-content" class="content"><router-outlet/></main>
+<dialog #idleDialog aria-modal="true" aria-labelledby="idle-title" (cancel)="$event.preventDefault(); keepAlive()">
+  <h2 id="idle-title">Are you still there?</h2>
+  <p>For your security, you will be signed out in <strong>{{auth.countdown()}}</strong> seconds.</p>
+  <p class="small" aria-live="polite">Your session is inactive.</p>
+  <div class="dialog-actions"><button class="primary" autofocus (click)="keepAlive()">Keep me signed in</button><button (click)="auth.logout()">Log out now</button></div>
+</dialog>

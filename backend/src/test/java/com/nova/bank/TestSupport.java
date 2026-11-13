@@ -17,7 +17,9 @@ public abstract class TestSupport {
  @Autowired protected ObjectMapper mapper;
  @Autowired protected AuthService auth;
  /** Isolate identity transitions without deleting foreign-key fixture owners. */
- @BeforeEach void resetIdentity(){String database=jdbc.queryForObject("SELECT current_database()",String.class);if(database==null||!database.endsWith("_test"))throw new IllegalStateException("Tests require DB_NAME ending in _test");auth.seedUsers();jdbc.update("DELETE FROM token_revocations");jdbc.update("UPDATE users SET failed_attempts=0,locked=false,last_login='2026-10-14T08:10:00Z'");}
+ @BeforeEach void resetIdentity(){String database=jdbc.queryForObject("SELECT current_database()",String.class);if(database==null||!database.endsWith("_test"))throw new IllegalStateException("Tests require DB_NAME ending in _test");auth.seedUsers();resetFeatureFixtures();jdbc.update("DELETE FROM token_revocations");jdbc.update("UPDATE users SET failed_attempts=0,locked=false,last_login='2026-10-14T08:10:00Z'");}
+ /** Extend deterministic fixture reset without duplicating identity infrastructure. */
+ protected void resetFeatureFixtures() {}
  /** Obtain a real server-issued bearer through the HTTP surface. */
  protected String login(String username) throws Exception {var response=mvc.perform(post("/api/v1/auth/login").contentType("application/json").content(mapper.writeValueAsString(java.util.Map.of("username",username,"password","demo-only")))).andExpect(status().isOk()).andReturn();return mapper.readTree(response.getResponse().getContentAsString()).get("token").asText();}
 }

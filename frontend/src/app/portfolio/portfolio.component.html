@@ -1,0 +1,105 @@
+<section aria-labelledby="portfolio-title" [attr.aria-busy]="loading()">
+  <div class="page-heading">
+    <div>
+      <p class="eyebrow">YOUR BANKING RELATIONSHIP</p>
+      <h1 id="portfolio-title">{{overview ? 'Accounts Overview' : (summary()?.greeting || 'Your portfolio')}}</h1>
+      @if (!overview && summary(); as portfolio) {
+        <p class="muted">Last login:
+          @if (portfolio.lastLogin) {
+            <time [attr.datetime]="portfolio.lastLogin">{{portfolio.lastLogin | date:'d MMM, h:mm a':'UTC'}}</time>
+          } @else { No previous login }
+        </p>
+      }
+      @if (overview) { <p class="muted">Your accounts, organized around your everyday banking.</p> }
+    </div>
+    <a [routerLink]="overview ? '/home' : '/accounts'">{{overview ? 'Back to Home' : 'View all accounts'}}</a>
+  </div>
+
+  @if (loading()) {
+    <p role="status" aria-live="polite">Loading your {{overview ? 'accounts' : 'portfolio'}}…</p>
+    <div class="account-grid" aria-hidden="true">
+      @for (item of [1,2,3,4]; track item) { <div class="account-card skeleton"></div> }
+    </div>
+  } @else if (error()) {
+    <div class="async-state" role="alert">
+      <h2>We couldn't load your {{overview ? 'accounts' : 'portfolio'}}.</h2>
+      <p>Please try again. Your balances have not been changed.</p>
+      <button class="primary" (click)="load()">Retry</button>
+    </div>
+  } @else {
+    @if (!overview && summary(); as portfolio) {
+      <section class="relationship" aria-labelledby="balance-title">
+        <p id="balance-title" class="muted">Total relationship balance</p>
+        <p class="relationship-value" data-testid="relationship-balance"><span>PHP</span> {{money(portfolio.relationshipBalance)}}</p>
+        <p class="muted small">Sum of available deposit balances.</p>
+      </section>
+    }
+    @if (accounts().length === 0) {
+      <div class="async-state" role="status"><h2>No accounts to display</h2><p>Your portfolio currently has no accounts.</p></div>
+    } @else {
+      @if (!overview) { <h2>Your accounts</h2> }
+      @for (group of (overview ? groups : ['All']); track group) {
+        @if (!overview || grouped(group).length > 0) {
+          <section [attr.aria-label]="overview ? group : 'Your accounts'" class="account-section">
+            @if (overview) { <h2>{{group}}</h2> }
+            <div class="account-grid">
+              @for (account of (overview ? grouped(group) : accounts()); track account.id) {
+                <article class="account-card" [attr.data-account-id]="account.id">
+                  <div class="account-card-heading"><p class="small muted">{{account.group}}</p><span class="status-badge">{{account.status}}</span></div>
+                  <h3>{{account.accountName}}</h3>
+                  <p class="masked-number">{{account.maskedNumber}}</p>
+                  <p class="small muted">{{account.accountType === 'DEPOSIT' ? 'Deposit account' : account.accountType === 'CREDIT_CARD' ? 'Credit card' : 'Loan account'}}</p>
+                  <dl>
+                    @if (account.accountType === 'CREDIT_CARD') {
+                      <dt>Amount due</dt><dd>PHP {{money(account.amountDue)}}</dd>
+                      <dt>Credit limit</dt><dd>PHP {{money(account.creditLimit)}}</dd>
+                      <dt>Available credit</dt><dd>PHP {{money(account.availableCredit)}}</dd>
+                    } @else if (account.accountType === 'LOAN') {
+                      <dt>Outstanding balance</dt><dd>PHP {{money(account.outstandingBalance)}}</dd>
+                    } @else {
+                      <dt>Available balance</dt><dd>PHP {{money(account.availableBalance)}}</dd>
+                    }
+                  </dl>
+                  <a routerLink="/accounts" fragment="account-details-notice" [attr.aria-label]="'View details for ' + account.accountName + ' ' + account.maskedNumber">View details <span aria-hidden="true">→</span></a>
+                </article>
+              }
+            </div>
+          </section>
+        }
+      }
+      <p id="account-details-notice" class="small muted">Account activity and statement downloads will be available in the next demonstration slice.</p>
+    }
+
+    @if (!overview) {
+      <section class="quick-links" aria-labelledby="quick-title">
+        <h2 id="quick-title">Quick links</h2>
+        <ul>
+          <li><a routerLink="/accounts">View Transactions</a><span class="small muted"> · Choose an account; activity coming next</span></li>
+          <li><a routerLink="/accounts" fragment="account-details-notice">Download Statements</a><span class="small muted"> · Coming next</span></li>
+          <li><a routerLink="/home" fragment="recommendations">Explore Products</a></li>
+          <li><a routerLink="/home" fragment="offer-previews">Promotions &amp; Offers</a></li>
+          <li><a routerLink="/home" fragment="support-preview">Customer Support</a></li>
+        </ul>
+      </section>
+      <div class="preview-grid">
+        <section id="recommendations" aria-labelledby="recommendations-title">
+          <h2 id="recommendations-title">Recommended for you</h2>
+          <article class="preview-item"><h3>Ipon Goal Saver</h3><p class="muted">Build savings automatically on payday</p></article>
+          <article class="preview-item"><h3>Rewards Credit Card</h3><p class="muted">Earn points on dining &amp; groceries</p></article>
+          <p class="small muted">Product catalogue coming in a later slice. No application is submitted.</p>
+        </section>
+        <section id="offer-previews" aria-labelledby="offers-title">
+          <h2 id="offers-title">Offer previews</h2>
+          @if (summary()?.customerName === 'Miguel De La Cruz') {
+            <article class="preview-item"><h3>Payday Ipon Bonus</h3><p class="muted">Activate by 31 Dec for extra goal interest</p></article>
+            <article class="preview-item"><h3>Cashback Week</h3><p class="muted">5% back on dining in this demonstration</p></article>
+          } @else if (summary()?.customerName === 'Rosa Santos') {
+            <article class="preview-item"><h3>Home Loan Fee Waiver</h3><p class="muted">100% appraisal fee waived in this demonstration</p></article>
+          } @else { <p class="muted">No personalized previews available.</p> }
+          <p class="small muted">Preview only. Full eligibility and terms coming with Offers.</p>
+        </section>
+      </div>
+      <aside id="support-preview" class="advisory"><strong>Customer Support</strong><p>Support directory and secure enquiry simulation are coming in a later slice. This portal does not contact a live agent.</p></aside>
+    }
+  }
+</section>
