@@ -67,15 +67,16 @@
           </section>
         }
       }
-      <p id="account-details-notice" class="small muted">Statement downloads will be available in the next demonstration slice.</p>
     }
 
     @if (!overview) {
       <section class="quick-links" aria-labelledby="quick-title">
         <h2 id="quick-title">Quick links</h2>
         <ul>
-          <li><a [routerLink]="['/accounts', accounts()[0].id]">View Transactions</a></li>
-          <li><a routerLink="/accounts" fragment="account-details-notice">Download Statements</a><span class="small muted"> · Coming next</span></li>
+          @if (accounts().length > 0) {
+            <li><a [routerLink]="['/accounts', accounts()[0].id]">View Transactions</a></li>
+            <li><a [routerLink]="['/accounts', accounts()[0].id]" fragment="statement-download">Download Statements</a></li>
+          }
           <li><a routerLink="/home" fragment="recommendations">Explore Products</a></li>
           <li><a routerLink="/home" fragment="offer-previews">Promotions &amp; Offers</a></li>
           <li><a routerLink="/home" fragment="support-preview">Customer Support</a></li>

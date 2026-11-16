@@ -11,7 +11,12 @@
     <div class="page-heading"><div><h1 id="activity-title">{{account.accountName}}</h1>
       <p class="masked-number">{{account.maskedNumber}} · {{account.accountType}} · {{account.currency}}</p>
       <span class="status-badge">{{account.status}}</span></div>
-      <p class="small muted">Statement download is coming in the next demonstration slice.</p>
+      <div id="statement-download">
+        <button type="button" class="primary" (click)="downloadStatement()" [disabled]="loading() || downloading()" [attr.aria-busy]="downloading()" aria-describedby="statement-guidance">{{downloading() ? 'Downloading…' : 'Download Statement'}}</button>
+        <p id="statement-guidance" class="small muted">Demo text statement · All account activity, regardless of the filters below. Not an official bank statement.</p>
+        <p role="status" aria-live="polite">{{statementNotice()}}</p>
+        @if (statementError()) { <p role="alert">{{statementError()}}</p> }
+      </div>
     </div>
     <dl class="activity-summary">
       <div><dt>Available balance</dt><dd>PHP {{money(account.availableBalance)}}</dd></div>

@@ -3,7 +3,8 @@ import { DatePipe } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { catchError, combineLatest, distinctUntilChanged, map, of, startWith, Subject, switchMap, tap } from 'rxjs';
+import { catchError, combineLatest, distinctUntilChanged, filter, finalize, map, of, startWith, Subject, switchMap, takeUntil, tap } from 'rxjs';
+import { StatementService } from '../statements/statement.service';
 import { ACTIVITY_DEMO_DATE, Activity, ActivityFilters, ActivityService } from './activity.service';
 
 /** Render owner-safe account activity with URL state and cancellable reads. */
@@ -14,6 +15,9 @@ export class ActivityComponent implements OnInit {
   readonly loading = signal(true);
   readonly error = signal('');
   readonly expanded = signal('');
+  readonly downloading = signal(false);
+  readonly statementError = signal('');
+  readonly statementNotice = signal('');
   readonly range = signal('30');
   readonly categories = ['INCOME', 'GROCERIES', 'SAVINGS', 'DINING', 'TRANSPORT', 'GENERAL'];
   readonly form = new FormGroup({search: new FormControl('', {nonNullable: true}),
@@ -24,7 +28,7 @@ export class ActivityComponent implements OnInit {
   private retryCount = 0;
   /** Bind route state, authenticated transport and component lifetime. */
   constructor(private client: ActivityService, private route: ActivatedRoute, private router: Router,
-    private destroyRef: DestroyRef, @Inject(ACTIVITY_DEMO_DATE) private demoDate: string) {}
+    private destroyRef: DestroyRef, private statements: StatementService, @Inject(ACTIVITY_DEMO_DATE) private demoDate: string) {}
   /** Restore browser history filters and cancel obsolete searches or account reads. */
   ngOnInit() {
     this.form.valueChanges.pipe(takeUntilDestroyed(this.destroyRef)).subscribe(() => this.navigate({...this.form.getRawValue(), page: 0}));
@@ -40,12 +44,26 @@ export class ActivityComponent implements OnInit {
       }),
       map(([params,, retry]) => ({id: params.get('id') || '', filters: this.form.getRawValue(), retry})),
       distinctUntilChanged((a, b) => a.id === b.id && JSON.stringify(a.filters) === JSON.stringify(b.filters) && a.retry === b.retry),
-      tap(request => { this.loading.set(true); this.error.set(''); if (this.data()?.accountId !== request.id) this.data.set(null); }),
+      tap(request => { this.loading.set(true); this.error.set(''); if (this.data()?.accountId !== request.id) { this.data.set(null); this.statementError.set(''); this.statementNotice.set(''); } }),
       switchMap(request => this.client.list(request.id, request.filters).pipe(
         map(data => ({data, error: ''})),
         catchError(error => of({data: null, error: [403,404].includes(error.status) ? 'Account Not Available' : 'We could not load account activity. Please retry.'})))),
       takeUntilDestroyed(this.destroyRef)
     ).subscribe(result => { this.data.set(result.data); this.error.set(result.error); this.loading.set(false); });
+  }
+  /** Download the selected account, cancelling on route change or destruction; never apply ledger filters. */
+  downloadStatement() {
+    const account = this.data();
+    if (!account || this.loading() || this.error() || this.downloading()) return;
+    this.downloading.set(true); this.statementError.set(''); this.statementNotice.set('');
+    this.statements.download(account.accountId).pipe(
+      takeUntil(this.route.paramMap.pipe(filter(params => params.get('id') !== account.accountId))),
+      takeUntilDestroyed(this.destroyRef),
+      finalize(() => this.downloading.set(false))
+    ).subscribe({
+      next: () => this.statementNotice.set('Your demo statement download has started.'),
+      error: () => this.statementError.set('We could not download your statement. Please try again. No file was saved.')
+    });
   }
   /** Write navigable filter state without reloading the document. */
   private navigate(filters: ActivityFilters) {
