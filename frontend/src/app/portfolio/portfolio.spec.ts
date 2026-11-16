@@ -1,7 +1,11 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting, HttpTestingController } from '@angular/common/http/testing';
-import { ActivatedRoute, provideRouter } from '@angular/router';
+import { ActivatedRoute, convertToParamMap, provideRouter, Router } from '@angular/router';
+import { of } from 'rxjs';
+import { RouterTestingHarness } from '@angular/router/testing';
+import { AuthService } from '../auth/auth.service';
+import { routes } from '../app.routes';
 import { PortfolioComponent } from './portfolio.component';
 import { AccountSummary, PortfolioService, PortfolioSummary } from './portfolio.service';
 
@@ -20,7 +24,7 @@ describe('Portfolio', () => {
   let fixture: ComponentFixture<PortfolioComponent>;
   /** Configure only real Angular client plumbing, with the network test boundary substituted. */
   function setup(overview = false) {
-    TestBed.configureTestingModule({imports:[PortfolioComponent],providers:[provideRouter([]),provideHttpClient(),provideHttpClientTesting(),{provide:ActivatedRoute,useValue:{snapshot:{data:{overview}}}}]});
+    TestBed.configureTestingModule({imports:[PortfolioComponent],providers:[provideRouter([]),provideHttpClient(),provideHttpClientTesting(),{provide:ActivatedRoute,useValue:{snapshot:{data:{overview}},queryParamMap:of(convertToParamMap({}))}}]});
     http = TestBed.inject(HttpTestingController);
   }
   /** Enter the component and initiate the route's request. */
@@ -88,5 +92,55 @@ describe('Portfolio', () => {
   it('preserves negative signs cents and large decimal precision when formatting', () => {
     setup(); const component = TestBed.createComponent(PortfolioComponent).componentInstance;
     expect(component.money('-0.01')).toBe('-0.01'); expect(component.money('9999999999999.99')).toBe('9,999,999,999,999.99'); expect(component.money(null)).toBe('—');
+  });
+});
+
+/** Exercise native shell submission and URL filtering through actual application routes. */
+describe('Portfolio search routing', () => {
+  let harness: RouterTestingHarness;
+  let http: HttpTestingController;
+  beforeEach(async () => {
+    sessionStorage.clear();
+    TestBed.configureTestingModule({providers:[provideRouter(routes),provideHttpClient(),provideHttpClientTesting()]});
+    http = TestBed.inject(HttpTestingController);
+    TestBed.inject(AuthService).installSession({token:'signed-token',tokenType:'Bearer',expiresIn:86400,user:{id:'owner',username:'miguel',fullName:'Miguel',role:'ROLE_CUSTOMER',lastLogin:null}});
+    harness = await RouterTestingHarness.create();
+  });
+  afterEach(() => { http.verify(); TestBed.inject(AuthService).ngOnDestroy(); sessionStorage.clear(); });
+  /** Read only the rendered account identities. */
+  function renderedIds(): string[] {
+    return Array.from((harness.fixture.nativeElement as HTMLElement).querySelectorAll('[data-account-id]')).map(el => el.getAttribute('data-account-id')!);
+  }
+  it('submits typed global search from Home, reads overview and restores filtering on re-entry', async () => {
+    await harness.navigateByUrl('/home');
+    http.expectOne('/api/v1/portfolio/summary').flush(summary); harness.detectChanges();
+    const root = harness.fixture.nativeElement as HTMLElement;
+    const home = root.querySelector('app-portfolio');
+    const input = root.querySelector<HTMLInputElement>('#global-search')!;
+    input.value = ' Savings '; input.dispatchEvent(new Event('input', {bubbles:true})); harness.detectChanges();
+    root.querySelector<HTMLFormElement>('.global-search')!.requestSubmit();
+    await harness.fixture.whenStable(); harness.detectChanges();
+    expect(TestBed.inject(Router).url).toBe('/accounts?search=Savings');
+    expect(root.querySelector('app-portfolio')).not.toBe(home);
+    const request = http.expectOne('/api/v1/accounts'); expect(request.request.method).toBe('GET');
+    request.flush(accounts); harness.detectChanges();
+    expect(root.querySelector('h1')?.textContent).toBe('Accounts Overview');
+    expect(renderedIds()).toEqual(['savings']);
+    const savedUrl = TestBed.inject(Router).url;
+    await harness.navigateByUrl('/home'); http.expectOne('/api/v1/portfolio/summary').flush(summary);
+    await harness.navigateByUrl(savedUrl); http.expectOne('/api/v1/accounts').flush(accounts); harness.detectChanges();
+    expect(renderedIds()).toEqual(['savings']);
+  });
+  it('reacts to query changes using names, groups and masked numbers only, with safe unmatched and cleared states', async () => {
+    await harness.navigateByUrl('/accounts?search=rewards'); http.expectOne('/api/v1/accounts').flush(accounts); harness.detectChanges();
+    expect(renderedIds()).toEqual(['card']);
+    for (const [search, ids] of [['loans',['loan']],['9034',['savings']],['116620.10',[]],['DEPOSIT',[]],['<script>',[]],['   ',['savings','payroll','card','loan']]] as [string,string[]][]) {
+      await harness.navigateByUrl('/accounts?search=' + encodeURIComponent(search)); harness.detectChanges();
+      expect(renderedIds()).toEqual(ids);
+      http.expectNone('/api/v1/accounts');
+      if (!ids.length) expect((harness.fixture.nativeElement as HTMLElement).textContent).toContain('No matching accounts');
+    }
+    expect((harness.fixture.nativeElement as HTMLElement).querySelector('script')).toBeNull();
+    await harness.navigateByUrl('/accounts'); harness.detectChanges(); expect(renderedIds().length).toBe(4);
   });
 });

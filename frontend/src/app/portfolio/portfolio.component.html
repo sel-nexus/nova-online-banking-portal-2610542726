@@ -36,6 +36,8 @@
     }
     @if (accounts().length === 0) {
       <div class="async-state" role="status"><h2>No accounts to display</h2><p>Your portfolio currently has no accounts.</p></div>
+    } @else if (overview && filteredAccounts().length === 0) {
+      <div class="async-state" role="status"><h2>No matching accounts</h2><p>Broaden your search or <a routerLink="/accounts">view all accounts</a>.</p></div>
     } @else {
       @if (!overview) { <h2>Your accounts</h2> }
       @for (group of (overview ? groups : ['All']); track group) {

@@ -1,4 +1,4 @@
-import { Component, DestroyRef, computed, signal } from '@angular/core';
+import { Component, DestroyRef, ElementRef, ViewChild, afterRender, computed, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
@@ -10,6 +10,9 @@ import { SupportService, SupportContent, InquiryReceipt } from './support.servic
 /** Render protected help and a public contact entry without leaking directory data. */
 @Component({selector:'nova-support',standalone:true,imports:[ReactiveFormsModule,RouterLink],templateUrl:'./support.component.html'})
 export class SupportComponent {
+ @ViewChild('branches') branches?:ElementRef<HTMLElement>;
+ private readonly fragment=signal<string|null>(null);
+ private scrolledBranch?:HTMLElement;
  readonly contact:boolean;
  readonly content=signal<SupportContent|null>(null);
  readonly loading=signal(false);readonly sending=signal(false);
@@ -24,6 +27,13 @@ export class SupportComponent {
  /** Restore shareable search/disclosure and read content only for a live session. */
  constructor(public auth:AuthService,private service:SupportService,private route:ActivatedRoute,private router:Router,private destroy:DestroyRef){
   this.contact=route.snapshot.data['contact']===true;
+  route.fragment.pipe(takeUntilDestroyed(destroy)).subscribe(fragment=>this.fragment.set(fragment));
+  // Resolve the anchor only after async directory content has rendered.
+  afterRender(()=>{
+   if(this.fragment()!=='branches'){this.scrolledBranch=undefined;return;}
+   const target=this.branches?.nativeElement;
+   if(target&&target!==this.scrolledBranch){target.scrollIntoView();this.scrolledBranch=target;}
+  });
   route.queryParamMap.pipe(takeUntilDestroyed(destroy)).subscribe(params=>{this.search.set(params.get('search')||'');this.expanded.set(params.get('faq')||'');});
   if(auth.authenticated())this.load();
  }

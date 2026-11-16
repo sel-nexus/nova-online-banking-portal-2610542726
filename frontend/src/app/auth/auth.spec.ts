@@ -26,10 +26,53 @@ describe('Authentication slice',()=>{
  it('attaches bearer to configured API only and expires on protected 401',()=>{auth.installSession(session);const api=TestBed.inject(ApiService);api.get('/protected').subscribe({error:()=>{}});const r=http.expectOne('/api/v1/protected');expect(r.request.headers.get('Authorization')).toBe('Bearer '+session.token);r.flush({}, {status:401,statusText:'Unauthorized'});expect(auth.session()).toBeNull();TestBed.inject(HttpClient).get('https://unrelated.example/data').subscribe();const outside=http.expectOne('https://unrelated.example/data');expect(outside.request.headers.has('Authorization')).toBeFalse();outside.flush({});});
  it('revokes logout with bearer and preserves username preference',()=>{auth.installSession(session);localStorage.setItem('nova.username','miguel');auth.logout();const r=http.expectOne('/api/v1/auth/logout');expect(r.request.headers.get('Authorization')).toBe('Bearer '+session.token);r.flush({message:'Logged out successfully.'});expect(auth.session()).toBeNull();expect(sessionStorage.getItem('nova.session')).toBeNull();expect(localStorage.getItem('nova.username')).toBe('miguel');});
  it('clears locally and reports unconfirmed server revocation on network failure',()=>{auth.installSession(session);auth.logout();http.expectOne('/api/v1/auth/logout').error(new ProgressEvent('error'));expect(auth.session()).toBeNull();expect(TestBed.inject(NotificationService).message()).toContain('could not be confirmed');});
- it('warns at 120s, counts down 30s and revokes unanswered session',fakeAsync(()=>{auth.ngOnDestroy();TestBed.resetTestingModule();TestBed.configureTestingModule({providers:[provideRouter([]),provideHttpClient(withInterceptors([authInterceptor])),provideHttpClientTesting()]});auth=TestBed.inject(AuthService);http=TestBed.inject(HttpTestingController);spyOn(TestBed.inject(Router),'navigate').and.resolveTo(true);auth.installSession(session);tick(119000);expect(auth.warning()).toBeFalse();tick(1000);expect(auth.warning()).toBeTrue();expect(auth.countdown()).toBe(30);tick(29000);expect(auth.countdown()).toBe(1);tick(1000);http.expectOne('/api/v1/auth/logout').flush({message:'Logged out successfully.'});expect(auth.session()).toBeNull();auth.ngOnDestroy();}));
+ it('warns at 120s, counts down 30s and revokes unanswered session',fakeAsync(()=>{auth.ngOnDestroy();TestBed.resetTestingModule();TestBed.configureTestingModule({providers:[provideRouter([]),provideHttpClient(withInterceptors([authInterceptor])),provideHttpClientTesting()]});auth=TestBed.inject(AuthService);http=TestBed.inject(HttpTestingController);spyOn(TestBed.inject(Router),'navigate').and.resolveTo(true);auth.installSession(session);tick(119000);expect(auth.warning()).toBeFalse();tick(1000);expect(auth.warning()).toBeTrue();expect(auth.countdown()).toBe(30);tick(29000);expect(auth.countdown()).toBe(1);tick(1000);http.expectOne('/api/v1/auth/logout').flush({message:'Logged out successfully.'});expect(auth.session()).toBeNull();auth.ngOnDestroy();tick(8000);expect(TestBed.inject(NotificationService).message()).toBe('');}));
  it('activity resets idle before warning but does not dismiss an open warning',fakeAsync(()=>{auth.ngOnDestroy();TestBed.resetTestingModule();TestBed.configureTestingModule({providers:[provideRouter([]),provideHttpClient(withInterceptors([authInterceptor])),provideHttpClientTesting()]});auth=TestBed.inject(AuthService);http=TestBed.inject(HttpTestingController);spyOn(TestBed.inject(Router),'navigate').and.resolveTo(true);auth.installSession(session);tick(119000);document.dispatchEvent(new MouseEvent('mousemove'));tick(119000);expect(auth.warning()).toBeFalse();tick(1000);expect(auth.warning()).toBeTrue();document.dispatchEvent(new KeyboardEvent('keydown'));expect(auth.warning()).toBeTrue();auth.keepAlive();tick(119000);expect(auth.warning()).toBeFalse();tick(1000);expect(auth.warning()).toBeTrue();auth.ngOnDestroy();}));
  it('keepalive and Escape close native idle warning without logout',()=>{auth.installSession(session);const f=TestBed.createComponent(ShellComponent);f.detectChanges();auth.warnNow();f.detectChanges();const dialog=f.nativeElement.querySelector('dialog') as HTMLDialogElement;expect(dialog.open).toBeTrue();dialog.dispatchEvent(new Event('cancel',{cancelable:true}));f.detectChanges();expect(dialog.open).toBeFalse();expect(auth.warning()).toBeFalse();http.expectNone('/api/v1/auth/logout');});
- it('reload restores a live tab session and drops malformed storage',()=>{auth.installSession(session);auth.ngOnDestroy();TestBed.resetTestingModule();TestBed.configureTestingModule({providers:[provideRouter([]),provideHttpClient(),provideHttpClientTesting()]});const restored=TestBed.inject(AuthService);expect(restored.authenticated()).toBeTrue();restored.ngOnDestroy();sessionStorage.setItem('nova.session','{');TestBed.resetTestingModule();TestBed.configureTestingModule({providers:[provideRouter([]),provideHttpClient(),provideHttpClientTesting()]});const malformed=TestBed.inject(AuthService);expect(malformed.session()).toBeNull();malformed.ngOnDestroy();});
+ /** Reload through a fresh injector so the actual constructor consumes persisted state. */
+ function reloadStored(value:string){
+  auth.ngOnDestroy();TestBed.resetTestingModule();sessionStorage.setItem('nova.session',value);
+  localStorage.setItem('nova.username','miguel');
+  TestBed.configureTestingModule({providers:[provideRouter([]),provideHttpClient(withInterceptors([authInterceptor])),provideHttpClientTesting()]});
+  router=TestBed.inject(Router);spyOn(router,'navigate').and.resolveTo(true);
+  auth=TestBed.inject(AuthService);http=TestBed.inject(HttpTestingController);
+ }
+ it('reload restores the exact live tab session without extending expiry',()=>{
+  const stored={...session,expiresAt:Date.now()+60000};const value=JSON.stringify(stored);reloadStored(value);
+  expect(auth.session()).toEqual(stored);expect(auth.authenticated()).toBeTrue();
+  expect(sessionStorage.getItem('nova.session')).toBe(value);expect(router.navigate).not.toHaveBeenCalled();
+ });
+ for(const kind of ['malformed','null','empty object','array','scalar','missing token','empty token','missing user','null user','missing expiry','zero expiry','expired','expiry at now']){
+  it('reload discards '+kind+' storage and remains anonymous',()=>{
+   const now=Date.now();spyOn(Date,'now').and.returnValue(now);
+   const stored:Record<string,unknown>={...session,expiresAt:now+60000};
+   let value:string;
+   switch(kind){
+    case 'malformed':value='{';break;
+    case 'null':value='null';break;
+    case 'empty object':value='{}';break;
+    case 'array':value='[]';break;
+    case 'scalar':value='123';break;
+    default:
+     if(kind==='missing token')delete stored['token'];
+     if(kind==='empty token')stored['token']='';
+     if(kind==='missing user')delete stored['user'];
+     if(kind==='null user')stored['user']=null;
+     if(kind==='missing expiry')delete stored['expiresAt'];
+     if(kind==='zero expiry')stored['expiresAt']=0;
+     if(kind==='expired')stored['expiresAt']=now-1;
+     if(kind==='expiry at now')stored['expiresAt']=now;
+     value=JSON.stringify(stored);
+   }
+   reloadStored(value);
+   expect(auth.session()).toBeNull();expect(auth.authenticated()).toBeFalse();
+   expect(sessionStorage.getItem('nova.session')).toBeNull();expect(localStorage.getItem('nova.username')).toBe('miguel');
+   const guard=TestBed.runInInjectionContext(()=>sessionGuard({} as never,{} as never));
+   expect(router.serializeUrl(guard as import('@angular/router').UrlTree)).toBe('/login');
+   http.expectNone('/api/v1/auth/logout');expect(router.navigate).not.toHaveBeenCalled();
+  });
+ }
+
 });
 import { HttpClient } from '@angular/common/http';
 import { NotificationService } from '../core/notification.service';

@@ -9,7 +9,7 @@
     <a routerLink="/support" routerLinkActive="active" ariaCurrentWhenActive="page">Support</a>
     @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Facilitator</a> }
   </nav>
-  <form class="global-search" (ngSubmit)="searchAccounts()" role="search">
+  <form class="global-search" (submit)="$event.preventDefault(); searchAccounts()" role="search">
     <label class="visually-hidden" for="global-search">Search accounts</label>
     <input id="global-search" type="search" placeholder="Search accounts" [formControl]="search" name="search">
     <button type="submit">Search</button>

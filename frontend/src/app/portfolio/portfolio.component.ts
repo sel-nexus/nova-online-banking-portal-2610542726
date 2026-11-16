@@ -1,4 +1,4 @@
-import { Component, DestroyRef, OnInit, signal } from '@angular/core';
+import { Component, DestroyRef, OnInit, computed, signal } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -15,11 +15,18 @@ export class PortfolioComponent implements OnInit {
   readonly error = signal(false);
   readonly summary = signal<PortfolioSummary | null>(null);
   readonly accounts = signal<AccountSummary[]>([]);
+  readonly search = signal('');
+  /** Match display names, groups and masked identifiers, never balances or internal IDs. */
+  readonly filteredAccounts = computed(() => {
+    const query = this.search().trim().toLowerCase();
+    return this.accounts().filter(account => [account.accountName, account.group, account.maskedNumber].some(value => value.toLowerCase().includes(query)));
+  });
   readonly groups = ['Savings', 'Payroll', 'Cards', 'Loans'] as const;
 
   /** Read page identity from the real route, not a secondary client-side page switch. */
   constructor(private client: PortfolioService, route: ActivatedRoute, private destroyRef: DestroyRef) {
     this.overview = route.snapshot.data['overview'] === true;
+    route.queryParamMap.pipe(takeUntilDestroyed(destroyRef)).subscribe(params => this.search.set(params.get('search') || ''));
   }
   /** Load the route's own endpoint on entry. */
   ngOnInit() { this.load(); }
@@ -39,7 +46,7 @@ export class PortfolioComponent implements OnInit {
     }
   }
   /** Select each overview group while retaining stable account IDs. */
-  grouped(group: string) { return this.accounts().filter(account => account.group === group); }
+  grouped(group: string) { return this.filteredAccounts().filter(account => account.group === group); }
   /** Format decimal strings by grouping characters, preserving cents and negative values exactly. */
   money(value: string | null) {
     if (value === null) return '—';

@@ -3,13 +3,22 @@ import { captureConsole, uiLogin, uiLogout } from './helpers';
 import { ChatReply } from '../src/app/chat/chat.service';
 
 /** Submit using a real chip or composer and assert both API and rendered reply contracts. */
-async function query(page:Page,prompt:string,expected:ChatReply,chip=true){
- const response=page.waitForResponse(r=>r.url().endsWith('/api/v1/chat/query')&&r.request().method()==='POST');
+async function query(page:Page,prompt:string,expected:ChatReply,chip=true,checkPending=false){
+ let responded=false;
+ const response=page.waitForResponse(r=>r.url().endsWith('/api/v1/chat/query')&&r.request().method()==='POST').then(result=>{responded=true;return result;});
  if(chip)await page.locator('.chat-topics').getByRole('button',{name:prompt,exact:true}).click();
  else{await page.getByLabel('Message to assistant',{exact:true}).fill(prompt);await page.locator('.chat-composer').getByRole('button',{name:'Send',exact:true}).click();}
+ if(checkPending){
+  await expect(page.locator('.chat-panel').getByRole('status')).toHaveText('Getting assistant reply…');
+  await expect(page.locator('.chat-panel').getByRole('status')).toBeVisible();
+  await expect(page.locator('.chat-stream')).toHaveAttribute('aria-busy','true');
+  await expect(page.locator('.chat-composer').getByRole('button',{name:'Send',exact:true})).toBeDisabled();
+  expect(responded).toBe(false);
+ }
  const result=await response;expect(result.status()).toBe(200);expect(result.request().postDataJSON()).toEqual({message:prompt});
  const reply:ChatReply=await result.json();expect(reply).toEqual(expected);
  await expect(page.locator('.chat-stream li').last()).toContainText(reply.message);
+ if(checkPending){await expect(page.locator('.chat-panel').getByRole('status')).toHaveCount(0);await expect(page.locator('.chat-stream')).toHaveAttribute('aria-busy','false');}
  if(reply.actionLabel){const role=reply.actionRoute==='close'?'button':'link';await expect(page.locator('.chat-stream li').last().getByRole(role,{name:reply.actionLabel,exact:true})).toBeVisible();}
  return reply;
 }
@@ -22,7 +31,16 @@ for(const persona of ['miguel','rosa'] as const)test(persona+' explores the pers
  await expect(page.getByText('Online · Scripted demonstration',{exact:true})).toBeVisible();await expect(page.locator('#chat-pii')).toContainText('Do not share PII');
  await page.locator('.chat-composer').getByRole('button',{name:'Send',exact:true}).click();await expect(page.locator('#chat-validation')).toBeVisible();
  const balance:ChatReply={message:persona==='miguel'?'Your available deposit balance is PHP 142,860.25 across 2 deposit accounts. Your latest Salary credit was PHP 48,500.00 on 13 Oct.':'Your available deposit balance is PHP 54,300.00 in your Salary Account.',actionLabel:'View Account Summary',actionRoute:'/accounts'};
- await query(page,'Account Balance',balance);
+ // Delay the real backend exchange, not its content, to observe the actual pending indicator.
+ const network=await page.context().newCDPSession(page);
+ try {
+  await network.send('Network.enable');
+  await network.send('Network.emulateNetworkConditions',{offline:false,latency:800,downloadThroughput:-1,uploadThroughput:-1});
+  await query(page,'Account Balance',balance,true,true);
+ } finally {
+  await network.send('Network.emulateNetworkConditions',{offline:false,latency:0,downloadThroughput:-1,uploadThroughput:-1});
+  await network.detach();
+ }
  await page.getByRole('button',{name:'Minimize chat',exact:true}).click();await expect(header).toBeFocused();await expect(page.locator('.chat-panel')).toHaveCount(0);
  await floating.click();await expect(page.locator('.chat-stream')).toContainText(balance.message);
  await page.locator('.chat-stream').getByRole('link',{name:'View Account Summary',exact:true}).click();await expect(page).toHaveURL(/\/accounts$/);await expect(page.locator('.chat-stream')).toContainText(balance.message);

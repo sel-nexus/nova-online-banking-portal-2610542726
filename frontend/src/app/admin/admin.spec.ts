@@ -1,4 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
+import { AppComponent } from '../app.component';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { provideRouter, Router, UrlTree } from '@angular/router';
@@ -42,4 +43,62 @@ describe('Facilitator',()=>{
  it('retries failed audit and escapes hostile action text',()=>{setup();http.expectOne('/api/v1/admin/audit').flush({}, {status:503,statusText:'Unavailable'});fixture.detectChanges();expect(fixture.nativeElement.textContent).toContain('We could not load audit history');click('Retry audit');loaded([{...event,action:'<script>alert(1)</script>'}]);expect(fixture.nativeElement.querySelector('script')).toBeNull();expect(fixture.nativeElement.textContent).toContain('<script>alert(1)</script>');});
  it('cancels pending audit on destruction',()=>{setup();const read=http.expectOne('/api/v1/admin/audit');fixture.destroy();expect(read.cancelled).toBeTrue();});
  it('propagates persona transport failure with exact authenticated request',()=>{setup();loaded();let failed=false;TestBed.inject(AdminService).persona('miguel').subscribe({error:()=>failed=true});const r=http.expectOne('/api/v1/admin/persona');expect(r.request.method).toBe('POST');expect(r.request.body).toEqual({username:'miguel'});expect(r.request.headers.get('Authorization')).toBe('Bearer admin-token');r.flush({}, {status:400,statusText:'Bad Request'});expect(failed).toBeTrue();});
+});
+
+
+/** Keep facilitator feedback transient and accessible without covering form hit targets. */
+describe('Facilitator notifications',()=>{
+ let fixture:ComponentFixture<AppComponent>;let notices:NotificationService;
+ beforeEach(()=>{TestBed.configureTestingModule({imports:[AppComponent],providers:[provideRouter([])]});notices=TestBed.inject(NotificationService);fixture=TestBed.createComponent(AppComponent);fixture.detectChanges();});
+ afterEach(()=>{notices.ngOnDestroy();fixture.destroy();});
+ it('announces exact feedback without stealing focus and expires after eight seconds',fakeAsync(()=>{
+  const focused=document.activeElement;
+  const message='Database successfully restored to original demonstration fixtures.';
+  notices.show(message);fixture.detectChanges();
+  const region=fixture.nativeElement.querySelector('[role=status]') as HTMLElement;
+  expect(region.getAttribute('aria-live')).toBe('polite');expect(region.textContent).toContain(message);
+  expect(document.activeElement).toBe(focused);expect(getComputedStyle(region).position).toBe('static');
+  tick(7999);fixture.detectChanges();expect(region.querySelector('button')).toBeTruthy();
+  tick(1);fixture.detectChanges();expect(region.textContent).toBe('');
+ }));
+ it('gives replacement feedback its own reading window and supports explicit dismissal',fakeAsync(()=>{
+  notices.show('Reset complete');tick(4000);notices.show('Simulation enabled');tick(4000);fixture.detectChanges();
+  expect(notices.message()).toBe('Simulation enabled');
+  const dismiss=fixture.nativeElement.querySelector('button[aria-label="Dismiss notification"]') as HTMLButtonElement;
+  dismiss.click();fixture.detectChanges();expect(notices.message()).toBe('');
+  notices.show('Simulation disabled');tick(4000);expect(notices.message()).toBe('Simulation disabled');
+  tick(4000);expect(notices.message()).toBe('');
+ }));
+ it('expires new feedback after clicking a focused dismiss control without an explicit blur',fakeAsync(()=>{
+  notices.show('Reset complete');fixture.detectChanges();
+  const region=fixture.nativeElement.querySelector('[role=status]') as HTMLElement;
+  const dismiss=region.querySelector('button') as HTMLButtonElement;
+  dismiss.focus();expect(document.activeElement).toBe(dismiss);
+  // Removing a focused control does not guarantee a usable focusout notification.
+  spyOn(notices,'blur').and.stub();
+  dismiss.click();fixture.detectChanges();expect(region.textContent).toBe('');expect(dismiss.isConnected).toBeFalse();
+  notices.show('Simulation enabled');fixture.detectChanges();expect(region.textContent).toContain('Simulation enabled');
+  tick(7999);fixture.detectChanges();expect(region.textContent).toContain('Simulation enabled');
+  tick(1);fixture.detectChanges();expect(region.textContent).toBe('');expect(region.querySelector('button')).toBeNull();
+ }));
+ it('preserves focused dismissal and resumes expiry after focus leaves',fakeAsync(()=>{
+  notices.show('Reset complete');fixture.detectChanges();
+  const dismiss=fixture.nativeElement.querySelector('button') as HTMLButtonElement;
+  dismiss.focus();expect(document.activeElement).toBe(dismiss);tick(8000);fixture.detectChanges();
+  expect(notices.message()).toBe('Reset complete');expect(document.activeElement).toBe(dismiss);
+  notices.show('Simulation enabled');fixture.detectChanges();tick(8000);fixture.detectChanges();
+  expect(notices.message()).toBe('Simulation enabled');expect(document.activeElement).toBe(dismiss);
+  expect(fixture.nativeElement.querySelector('button')).toBe(dismiss);
+  dismiss.blur();tick(8000);fixture.detectChanges();expect(notices.message()).toBe('');
+ }));
+ it('cancels pending expiry on service destruction',fakeAsync(()=>{
+  notices.show('Reset complete');notices.ngOnDestroy();expect(notices.message()).toBe('');tick(8000);expect(notices.message()).toBe('');
+ }));
+ it('keeps the source mobile header in flow while retaining desktop stickiness',()=>{
+  const rules=Array.from(document.styleSheets).flatMap(sheet=>Array.from(sheet.cssRules));
+  const desktop=rules.filter((rule):rule is CSSStyleRule=>rule instanceof CSSStyleRule&&rule.selectorText==='.app-header');
+  expect(desktop.some(rule=>rule.style.position==='sticky')).toBeTrue();
+  const mobile=rules.filter((rule):rule is CSSMediaRule=>rule instanceof CSSMediaRule&&rule.conditionText==='(max-width: 767px)');
+  expect(mobile.flatMap(rule=>Array.from(rule.cssRules)).some(rule=>rule instanceof CSSStyleRule&&rule.selectorText==='.app-header'&&rule.style.position==='static')).toBeTrue();
+ });
 });

@@ -61,21 +61,41 @@ test('dashboard transaction quick link opens a real selected account and revoked
   expect(console.errors).toEqual([]);
 });
 
-test('Rosa API and browser history navigation cannot disclose Miguel account metadata', async ({page}) => {
+test('Rosa API and initial direct account entry cannot disclose Miguel account metadata', async ({page, context}) => {
   const console = captureConsole(page); const session = await uiLogin(page,'rosa');
   const path = '/accounts/' + savings;
   const denied = await page.request.get('/api/v1' + path + '/transactions',{headers:{Authorization:'Bearer '+session.token}});
   expect(denied.status()).toBe(403); const body = await denied.json(); expect(body.message).toBe('Account Not Available');
   expect(JSON.stringify(body)).not.toMatch(/Peso|9034|116620/);
-  console.expectedStatuses.add(403);
-  const response = ledger(page);
-  // Exercise a hostile client-side navigation through the router's browser history boundary, without adding a product link to another customer.
-  await page.evaluate(route => { history.pushState(null,'',route); dispatchEvent(new PopStateEvent('popstate')); },path);
-  expect((await response).status()).toBe(403);
-  await expect(page.getByRole('heading',{name:'Account Not Available',exact:true})).toBeVisible();
-  await expect(page.locator('main')).not.toContainText('Peso Savings'); await expect(page.locator('main')).not.toContainText('9034');
-  await page.getByRole('link',{name:'Back to Accounts Overview',exact:true}).click(); await expect(page.getByRole('heading',{name:'Accounts Overview',exact:true})).toBeVisible();
-  expect(console.errors).toEqual([]);
+  // Copy the unmodified session issued by the genuine UI login into a fresh tab before its first entry.
+  const stored = await page.evaluate(() => sessionStorage.getItem('nova.session'));
+  expect(stored).not.toBeNull(); expect(JSON.parse(stored!).token).toBe(session.token);
+  const hostile = await context.newPage(); const hostileConsole = captureConsole(hostile);
+  try {
+    const origin = new URL(page.url()).origin;
+    await hostile.addInitScript(({origin, stored}) => {
+      if (location.origin === origin) sessionStorage.setItem('nova.session', stored);
+    }, {origin, stored: stored!});
+    const url = origin + '/api/v1' + path + '/transactions';
+    hostileConsole.allowHttpError(url + '?page=0&size=20', 'GET', 403);
+    const response = ledger(hostile);
+    await hostile.goto(path);
+    await expect(hostile).toHaveURL(origin + path);
+    const read = await response; expect(read.status()).toBe(403);
+    const rejected = await read.json(); expect(rejected.message).toBe('Account Not Available');
+    expect(JSON.stringify(rejected)).not.toMatch(/Peso|9034|116620/);
+    await expect(hostile.getByRole('heading',{name:'Account Not Available',exact:true})).toBeVisible();
+    await expect(hostile.locator('main')).not.toContainText('Peso Savings');
+    await expect(hostile.locator('main')).not.toContainText('9034');
+    await expect(hostile.locator('main')).not.toContainText('116620');
+    await expect(hostile.locator('main')).not.toContainText('116,620');
+    await hostile.getByRole('link',{name:'Back to Accounts Overview',exact:true}).click();
+    await expect(hostile.getByRole('heading',{name:'Accounts Overview',exact:true})).toBeVisible();
+  } finally {
+    await hostile.close();
+    expect(hostileConsole.errors).toEqual([]);
+    expect(console.errors).toEqual([]);
+  }
 });
 
 test('anonymous direct account entry redirects to login without account metadata', async ({page}) => {

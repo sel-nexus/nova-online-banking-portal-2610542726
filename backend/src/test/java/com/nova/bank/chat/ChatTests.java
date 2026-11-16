@@ -3,6 +3,7 @@ package com.nova.bank.chat;
 import com.nova.bank.TestSupport;
 import com.nova.bank.auth.TokenService;
 import com.nova.bank.auth.User;
+import com.nova.bank.auth.UserRepository;
 import com.nova.bank.common.ApiException;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -21,6 +22,7 @@ import static org.springframework.security.test.web.servlet.request.SecurityMock
 class ChatTests extends TestSupport {
  @Autowired ChatService service;
  @Autowired TokenService tokens;
+ @Autowired UserRepository users;
  private static final UUID MIGUEL=UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11");
  private static final UUID ROSA=UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a12");
  private static final UUID ADMIN=UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a13");
@@ -103,7 +105,15 @@ class ChatTests extends TestSupport {
  /** Cover no bearer, invalid, revoked, deleted signed subject and unexpected security principals. */
  @Test void authenticationIsRequired() throws Exception {
   String revoked=login("miguel");auth.logout(revoked);
-  String absent=tokens.issue(new User(UUID.randomUUID(),"missing","unused","Missing","ROLE_CUSTOMER"));
+  UUID deletedId=UUID.randomUUID();
+  User temporary=users.saveAndFlush(new User(deletedId,"chat-deleted-"+deletedId.toString().substring(0,8),"unused","Missing","ROLE_CUSTOMER"));
+  String absent;
+  try{
+   absent=tokens.issue(users.findById(deletedId).orElseThrow());
+   assertThat(jdbc.queryForObject("SELECT count(*) FROM active_sessions WHERE user_id=?",Integer.class,deletedId)).isEqualTo(1);
+  }finally{users.delete(temporary);users.flush();}
+  assertThat(users.findById(deletedId)).isEmpty();
+  assertThat(jdbc.queryForObject("SELECT count(*) FROM active_sessions WHERE user_id=?",Integer.class,deletedId)).isZero();
   for(String bearer:List.of("","Bearer invalid","Bearer "+revoked,"Bearer "+absent))mvc.perform(post("/api/v1/chat/query").header("Authorization",bearer).contentType("application/json").content("{\"message\":\"Account Balance\"}")).andExpect(status().isUnauthorized()).andExpect(jsonPath("$.message").value("Authentication required."));
   for(Object principal:List.of(UUID.randomUUID(),"miguel"))mvc.perform(post("/api/v1/chat/query").with(authentication(new UsernamePasswordAuthenticationToken(principal,"unused",List.of()))).contentType("application/json").content("{\"message\":\"Card Help\"}")).andExpect(status().isUnauthorized());
  }

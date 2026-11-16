@@ -18,12 +18,12 @@
             @for (channel of directory.contacts; track channel.title) {
               <article><h3>{{channel.title}}</h3><p>{{channel.detail}}</p><p class="muted">{{channel.hours}}</p><p class="small muted">{{channel.description}}</p>
                 @if (channel.title === 'Secure Message') { <a routerLink="/contact">Send a secure message (Simulated)</a> }
-                @if (channel.title === 'Find a Branch / ATM') { <a href="#branches">View branch and ATM directory</a> }
+                @if (channel.title === 'Find a Branch / ATM') { <a routerLink="/support" fragment="branches" queryParamsHandling="preserve">View branch and ATM directory</a> }
               </article>
             }
           </div>
         </section>
-        <section id="branches" aria-labelledby="branches-title" class="support-section">
+        <section #branches id="branches" aria-labelledby="branches-title" class="support-section">
           <h2 id="branches-title">Metro Manila branches &amp; ATMs</h2>
           <div class="support-grid">
             @for (branch of directory.branches; track branch.name) { <article><h3>{{branch.name}}</h3><p>{{branch.address}}</p><p>{{branch.description}}</p><p class="muted">{{branch.hours}}</p></article> }

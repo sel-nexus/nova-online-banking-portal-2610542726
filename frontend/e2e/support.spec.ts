@@ -22,7 +22,13 @@ test('customer uses support directory and FAQ then sends a persisted simulated e
  await page.getByLabel('Search FAQs',{exact:true}).fill('available credit');await expect(page).toHaveURL(/search=available/);
  await page.getByRole('button',{name:'How is available credit calculated?',exact:true}).click();await expect(page.locator('#faq-credit')).toContainText('PHP 50,000.00 − PHP 8,450.00 = PHP 41,550.00.');
  await page.getByLabel('Search FAQs',{exact:true}).fill('not-a-question');await expect(page.getByText('No FAQs found. Broaden your search.',{exact:true})).toBeVisible();
+ const sharedShell=await page.locator('app-shell').elementHandle();expect(sharedShell).not.toBeNull();
  await page.getByRole('link',{name:'Contact Us',exact:true}).click();await expect(page).toHaveURL(/\/contact$/);
+ await expect(page.locator('app-shell')).toHaveCount(1);await expect(page.locator('app-chat')).toHaveCount(1);
+ expect(await sharedShell!.evaluate(shell=>shell===document.querySelector('app-shell'))).toBe(true);
+ await expect(page.getByRole('navigation',{name:'Primary'})).toBeVisible();
+ await expect(page.locator('.app-header').getByRole('button',{name:'Chat Assistant',exact:true})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Open Nova Bank Assistant',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Send Message (Simulated)',exact:true}).click();await expect(page.locator('#subject-error')).toContainText('Subject is required.');
  await page.getByLabel('Topic',{exact:true}).selectOption('CARDS');await page.getByLabel('Subject',{exact:true}).fill('Card Limit Increase');await page.getByLabel('Message',{exact:true}).fill('Inquiring about credit limit adjustments.');
  const send=page.waitForResponse(r=>r.url().endsWith('/api/v1/support/inquiries')&&r.request().method()==='POST');await page.getByRole('button',{name:'Send Message (Simulated)',exact:true}).click();
@@ -36,5 +42,6 @@ test('customer uses support directory and FAQ then sends a persisted simulated e
 test('anonymous Contact Us offers sign-in guidance without protected data',async({page})=>{
  const console=captureConsole(page);const protectedReads:string[]=[];page.on('request',r=>{if(r.url().endsWith('/api/v1/support/content'))protectedReads.push(r.url());});
  await page.goto('/login');await page.getByRole('link',{name:'Contact Us',exact:true}).click();await expect(page).toHaveURL(/\/contact$/);await expect(page.getByRole('heading',{name:'Contact Us',exact:true})).toBeVisible();await expect(page.getByText('Sign in to continue',{exact:true})).toBeVisible();await expect(page.locator('form')).toHaveCount(0);expect(protectedReads).toEqual([]);
+ await expect(page.locator('app-shell')).toHaveCount(0);await expect(page.locator('app-chat')).toHaveCount(0);
  await page.getByRole('link',{name:'Sign in to continue',exact:true}).click();await page.getByLabel('User ID',{exact:true}).fill('rosa');await page.getByLabel('Password',{exact:true}).fill('demo-only');await page.getByRole('button',{name:'SIGN IN',exact:true}).click();await expect(page).toHaveURL(/\/home$/);await page.getByRole('link',{name:'Customer Support',exact:true}).click();await expect(page.getByRole('heading',{name:'Customer Support',exact:true})).toBeVisible();expect(console.errors).toEqual([]);
 });

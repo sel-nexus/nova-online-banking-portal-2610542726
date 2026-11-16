@@ -13,7 +13,7 @@ export class ShellComponent implements OnDestroy {
  /** Mirror session warning state into a native modal with focus restoration. */
  constructor(public auth:AuthService,private router:Router){effect(()=>{const warning=auth.warning();const dialog=this.idleDialog?.nativeElement;if(!dialog)return;if(warning&&!dialog.open){this.restoreFocus=document.activeElement as HTMLElement;dialog.showModal();document.body.style.overflow='hidden';}else if(!warning&&dialog.open){dialog.close();document.body.style.overflow='';this.restoreFocus?.focus();}});}
  /** Route global account discovery to the real overview without inventing a search API. */
- searchAccounts(){void this.router.navigate(['/accounts']);}
+ searchAccounts(){void this.router.navigate(['/accounts'],{queryParams:{search:this.search.value.trim()||null}});}
  /** Toggle an explicitly synthetic alert notice using an accessible button. */
  toggleAlerts(){this.alertsOpen=!this.alertsOpen;}
  /** Keep the session active only through an explicit warning response. */ keepAlive(){this.auth.keepAlive();}

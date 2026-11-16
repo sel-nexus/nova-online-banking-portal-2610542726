@@ -6,6 +6,7 @@ import { HttpTestingController, provideHttpClientTesting } from '@angular/common
 import { provideRouter, Router, RouterOutlet } from '@angular/router';
 import { AuthService, authInterceptor } from '../auth/auth.service';
 import { ShellComponent } from '../core/shell.component';
+import { NotificationService } from '../core/notification.service';
 import { ChatComponent } from './chat.component';
 import { ChatReply, ChatService } from './chat.service';
 
@@ -80,5 +81,6 @@ describe('Chat authenticated shell',()=>{
   header.click();host.detectChanges();tick();expect(chat.nativeElement.textContent).toContain(balance.message);
   auth.logout();http.expectOne('/api/v1/auth/logout').flush({message:'Logged out successfully.'});tick();host.detectChanges();expect(router.url).toBe('/login');expect(host.debugElement.query(By.directive(ChatComponent))).toBeNull();
   auth.installSession({token:'rosa-token',tokenType:'Bearer',expiresIn:86400,user:{id:'rosa',username:'rosa',fullName:'Rosa',role:'ROLE_CUSTOMER',lastLogin:null}});void router.navigateByUrl('/home');tick();host.detectChanges();chat=host.debugElement.query(By.directive(ChatComponent));chat.nativeElement.querySelector('.chat-launcher').click();host.detectChanges();tick();expect(chat.nativeElement.querySelectorAll('.chat-stream li').length).toBe(0);
+   tick(8000);expect(TestBed.inject(NotificationService).message()).toBe('');
  }));
 });
