@@ -1,0 +1,33 @@
+<section aria-labelledby="catalogue-title" [attr.aria-busy]="loading()">
+  <div class="page-heading"><div><p class="eyebrow">DISCOVER NOVA</p><h1 #catalogueTitle id="catalogue-title" tabindex="-1">{{productsMode ? 'Retail products' : 'Promotions & Offers'}}</h1><p class="muted">Demonstration only. No real application or credit check is submitted.</p></div><a routerLink="/home">Back to Home</a></div>
+  @if (!productsMode) {
+    <section class="offer-banner" aria-labelledby="featured-title"><p class="eyebrow">FEATURED CAMPAIGN</p><h2 id="featured-title">Payday Ipon Boost</h2><p>Save toward your financial goals and receive a demonstration bonus! Valid through 31 Dec 2026.</p><a routerLink="/offers" [queryParams]="{category:'SAVINGS'}">Explore savings offers</a></section>
+  }
+  <nav class="offer-filters" aria-label="Catalogue categories">
+    @for (value of categories; track value) { <a [routerLink]="productsMode ? '/products' : '/offers'" [queryParams]="{category:value === 'ALL' ? null : value}" [attr.aria-current]="category() === value ? 'page' : null">{{value === 'ALL' ? (productsMode ? 'All Products' : 'All Offers') : (value | titlecase)}}</a> }
+  </nav>
+  @if (loading()) { <p role="status">Loading {{productsMode ? 'products' : 'offers'}}…</p> }
+  @else if (error()) { <div role="alert" class="async-state"><h2>We could not load the catalogue.</h2><p>Please try again.</p><button (click)="load()">Retry catalogue</button></div> }
+  @else if (productsMode) {
+    <div class="offer-grid">@for (product of visibleProducts(); track product.title) { <article class="offer-card"><p class="small muted">{{product.category | titlecase}}</p><h2>{{product.title}}</h2><p>{{product.benefit}}</p><a routerLink="/offers" [queryParams]="{category:product.category}">Explore {{product.category | titlecase}} promotions</a></article> }</div>
+    @if (visibleProducts().length === 0) { <p role="status">No products in this category. Choose All Products.</p> }
+  } @else {
+    <div class="offer-grid">@for (offer of visibleOffers(); track offer.id) { <article class="offer-card" [attr.data-offer-id]="offer.id"><p class="small muted">{{offer.category | titlecase}}</p><p class="offer-badge">{{offer.personalization}}</p><h2>{{offer.title}}</h2><p>{{offer.benefit}}</p><p class="small muted">Valid through <time [attr.datetime]="offer.validUntil">{{offer.validUntil | date:'d MMM yyyy':'UTC'}}</time></p>@if (offer.interested) { <p class="small">Interest recorded (Simulated)</p> }<a [id]="'offer-link-' + offer.id" [routerLink]="['/offers',offer.id]" [queryParams]="{category:category() === 'ALL' ? null : category()}" (click)="remember(offer.id)" [attr.aria-label]="'View offer: ' + offer.title">View offer <span aria-hidden="true">→</span></a></article> }</div>
+    @if (visibleOffers().length === 0) { <p role="status">No offers in this category. Choose All Offers.</p> }
+  }
+</section>
+<dialog #detailDialog class="offer-dialog" aria-modal="true" aria-labelledby="offer-detail-title" (cancel)="$event.preventDefault(); close()" (click)="backdrop($event)">
+  <button autofocus (click)="close()">Close offer details</button>
+  <h2 id="offer-detail-title">{{selected()?.title || 'Offer details'}}</h2>
+  @if (detailLoading()) { <p role="status">Loading offer details…</p> }
+  @else if (detailError()) { <div role="alert"><p>{{detailError()}}</p><button (click)="loadDetail()">Retry offer details</button></div> }
+  @else { @if (selected(); as offer) {
+    <p class="small muted">{{offer.category | titlecase}} · {{offer.personalization}}</p><p>{{offer.benefit}}</p>
+    <h3>Full terms</h3><p>{{offer.terms}}</p><h3>Eligibility</h3><p>{{offer.eligibility}}</p>
+    <p>Valid through <time [attr.datetime]="offer.validUntil">{{offer.validUntil | date:'d MMM yyyy':'UTC'}}</time></p>
+    <p class="small muted">This is a demonstration offer, not real banking terms.</p>
+    @if (offer.interested) { <p>Interest recorded (Simulated)</p><p role="status" aria-live="polite">{{notices.message()}}</p> }
+    @if (interestError()) { <p role="alert">We could not record your interest. Please try again.</p> }
+    <button class="primary" [disabled]="submitting()" (click)="expressInterest()">{{submitting() ? 'Recording interest…' : 'Express Interest (Simulated)'}}</button>
+  } }
+</dialog>

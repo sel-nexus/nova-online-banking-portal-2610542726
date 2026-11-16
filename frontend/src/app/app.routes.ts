@@ -7,6 +7,9 @@ export const routes:Routes=[
  {path:'',canActivate:[sessionGuard],loadComponent:()=>import('./core/shell.component').then(m=>m.ShellComponent),children:[
   {path:'home',title:'Home · Nova Bank',canActivate:[sessionGuard],data:{overview:false},loadComponent:()=>import('./portfolio/portfolio.component').then(m=>m.PortfolioComponent)},
   {path:'accounts/:id',title:'Account activity · Nova Bank',canActivate:[sessionGuard],loadComponent:()=>import('./activity/activity.component').then(m=>m.ActivityComponent)},
+  {path:'products',canActivate:[sessionGuard],title:'Products · Nova Bank',data:{products:true},loadComponent:()=>import('./offers/offers.component').then(m=>m.OffersComponent)},
+  {path:'offers/:offerId',canActivate:[sessionGuard],title:'Offer details · Nova Bank',loadComponent:()=>import('./offers/offers.component').then(m=>m.OffersComponent)},
+  {path:'offers',canActivate:[sessionGuard],title:'Offers · Nova Bank',loadComponent:()=>import('./offers/offers.component').then(m=>m.OffersComponent)},
   {path:'accounts',title:'Accounts · Nova Bank',canActivate:[sessionGuard],data:{overview:true},loadComponent:()=>import('./portfolio/portfolio.component').then(m=>m.PortfolioComponent)}
  ]},
  {path:'**',redirectTo:'login'}

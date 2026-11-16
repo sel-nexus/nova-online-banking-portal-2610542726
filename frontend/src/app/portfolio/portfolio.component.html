@@ -77,27 +77,27 @@
             <li><a [routerLink]="['/accounts', accounts()[0].id]">View Transactions</a></li>
             <li><a [routerLink]="['/accounts', accounts()[0].id]" fragment="statement-download">Download Statements</a></li>
           }
-          <li><a routerLink="/home" fragment="recommendations">Explore Products</a></li>
-          <li><a routerLink="/home" fragment="offer-previews">Promotions &amp; Offers</a></li>
+          <li><a routerLink="/products">Explore Products</a></li>
+          <li><a routerLink="/offers">Promotions &amp; Offers</a></li>
           <li><a routerLink="/home" fragment="support-preview">Customer Support</a></li>
         </ul>
       </section>
       <div class="preview-grid">
         <section id="recommendations" aria-labelledby="recommendations-title">
           <h2 id="recommendations-title">Recommended for you</h2>
-          <article class="preview-item"><h3>Ipon Goal Saver</h3><p class="muted">Build savings automatically on payday</p></article>
-          <article class="preview-item"><h3>Rewards Credit Card</h3><p class="muted">Earn points on dining &amp; groceries</p></article>
-          <p class="small muted">Product catalogue coming in a later slice. No application is submitted.</p>
+          <article class="preview-item"><h3><a routerLink="/products" [queryParams]="{category:'SAVINGS'}">Ipon Goal Saver</a></h3><p class="muted">Build savings automatically on payday</p></article>
+          <article class="preview-item"><h3><a routerLink="/products" [queryParams]="{category:'CARDS'}">Rewards Credit Card</a></h3><p class="muted">Earn points on dining &amp; groceries</p></article>
+          <p class="small muted"><a routerLink="/products">Browse retail products</a>. No application is submitted.</p>
         </section>
         <section id="offer-previews" aria-labelledby="offers-title">
           <h2 id="offers-title">Offer previews</h2>
           @if (summary()?.customerName === 'Miguel De La Cruz') {
-            <article class="preview-item"><h3>Payday Ipon Bonus</h3><p class="muted">Activate by 31 Dec for extra goal interest</p></article>
-            <article class="preview-item"><h3>Cashback Week</h3><p class="muted">5% back on dining in this demonstration</p></article>
+            <article class="preview-item"><h3><a routerLink="/offers/d1eebc99-9c0b-4ef8-bb6d-6bb9bd380a21">Payday Ipon Bonus</a></h3><p class="muted">Activate by 31 Dec for extra goal interest</p></article>
+            <article class="preview-item"><h3><a routerLink="/offers/d1eebc99-9c0b-4ef8-bb6d-6bb9bd380a23">Cashback Week</a></h3><p class="muted">5% back on dining in this demonstration</p></article>
           } @else if (summary()?.customerName === 'Rosa Santos') {
-            <article class="preview-item"><h3>Home Loan Fee Waiver</h3><p class="muted">100% appraisal fee waived in this demonstration</p></article>
+            <article class="preview-item"><h3><a routerLink="/offers/d1eebc99-9c0b-4ef8-bb6d-6bb9bd380a26">Home Loan Fee Waiver</a></h3><p class="muted">100% appraisal fee waived in this demonstration</p></article>
           } @else { <p class="muted">No personalized previews available.</p> }
-          <p class="small muted">Preview only. Full eligibility and terms coming with Offers.</p>
+          <p class="small muted"><a routerLink="/offers">Browse all offers and eligibility</a>. Demonstration only.</p>
         </section>
       </div>
       <aside id="support-preview" class="advisory"><strong>Customer Support</strong><p>Support directory and secure enquiry simulation are coming in a later slice. This portal does not contact a live agent.</p></aside>
