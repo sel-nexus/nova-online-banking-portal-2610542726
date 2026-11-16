@@ -17,12 +17,14 @@
     <button type="button" (click)="toggleAlerts()" [attr.aria-expanded]="alertsOpen" aria-controls="synthetic-alerts">Alerts <span class="alert-count">1</span></button>
     @if (alertsOpen) { <div id="synthetic-alerts" class="alert-popover" (keydown.escape)="alertsOpen=false"><p role="status">Synthetic alert: Welcome to the Nova banking demonstration. No live notifications are connected.</p><button (click)="toggleAlerts()">Close alerts</button></div> }
   </div>
+  <button #chatTrigger type="button" (click)="assistant.show(chatTrigger)" [attr.aria-expanded]="assistant.open" aria-controls="nova-chat">Chat Assistant</button>
   <details class="profile" (keydown.escape)="$any($event.currentTarget).open=false">
     <summary>{{auth.session()?.user?.fullName}}</summary>
     <div><p>{{auth.session()?.user?.username}}</p><p class="small muted">{{auth.session()?.user?.role}}</p><button (click)="auth.logout()">Log out</button></div>
   </details>
 </header>
 <main id="main-content" class="content"><router-outlet/></main>
+<app-chat #assistant/>
 <dialog #idleDialog aria-modal="true" aria-labelledby="idle-title" (cancel)="$event.preventDefault(); keepAlive()">
   <h2 id="idle-title">Are you still there?</h2>
   <p>For your security, you will be signed out in <strong>{{auth.countdown()}}</strong> seconds.</p>

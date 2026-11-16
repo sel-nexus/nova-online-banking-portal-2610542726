@@ -1,0 +1,47 @@
+@if (auth.session()) {
+  <button #launcher class="chat-launcher" type="button" (click)="show(launcher)" [attr.aria-expanded]="open" aria-controls="nova-chat" [hidden]="open">Open Nova Bank Assistant</button>
+  @if (open) {
+    <section id="nova-chat" class="chat-panel" aria-labelledby="chat-title" (keydown.escape)="escape($event)">
+      <header class="chat-header">
+        <div><h2 id="chat-title">Nova Bank Assistant</h2><p>Online · Scripted demonstration</p></div>
+        <button type="button" (click)="minimize()" aria-label="Minimize chat">Minimize</button>
+        <button type="button" (click)="close()" aria-label="Close chat">Close</button>
+      </header>
+      <div #scroll class="chat-scroll">
+        <div class="chat-welcome">
+          <h3>Welcome to Nova Bank Assistant</h3>
+          <p class="muted">Explore your seeded banking information. This is not a live agent. Conversations are not retained by the server and are cleared when you close chat or sign out.</p>
+        </div>
+        <div class="chat-topics" aria-label="Suggested topics">
+          @for (prompt of topics; track prompt) {
+            <button type="button" (click)="topic(prompt)" [disabled]="pending">{{prompt}}</button>
+          }
+        </div>
+        <ol class="chat-stream" aria-label="Assistant messages" aria-live="polite" aria-relevant="additions" [attr.aria-busy]="pending">
+          @for (item of messages; track $index) {
+            <li><strong>{{item.sender}}</strong><p>{{item.text}}</p>
+              @if (item.reply; as reply) {
+                @if (navigable(reply.actionRoute)) {
+                  <a [routerLink]="reply.actionRoute">{{reply.actionLabel}}</a>
+                } @else if (reply.actionRoute === 'close') {
+                  <button type="button" (click)="close()">{{reply.actionLabel}}</button>
+                }
+              }
+            </li>
+          }
+        </ol>
+        @if (pending) { <p role="status" class="small muted">Getting assistant reply…</p> }
+        @if (error) { <p role="alert" class="field-error">{{error}}</p><button type="button" (click)="retry()">Retry reply</button> }
+      </div>
+      <form class="chat-composer" [formGroup]="form" (ngSubmit)="send()">
+        <label for="chat-message">Message to assistant</label>
+        <div class="chat-input">
+          <textarea #composer id="chat-message" rows="1" [formControl]="message" maxlength="500" aria-required="true" [attr.aria-invalid]="message.touched && message.invalid" aria-describedby="chat-pii chat-validation" placeholder="Ask about a suggested topic"></textarea>
+          <button type="submit" class="primary" [disabled]="pending">Send</button>
+        </div>
+        <p id="chat-validation" class="field-error" [hidden]="!message.touched || !message.invalid" role="alert">Enter a nonblank message of no more than 500 characters.</p>
+        <p id="chat-pii" class="small muted">Do not share PII: passwords, PINs, full account or card numbers, or other personal information.</p>
+      </form>
+    </section>
+  }
+}

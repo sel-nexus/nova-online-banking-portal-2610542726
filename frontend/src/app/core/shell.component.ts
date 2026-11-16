@@ -2,8 +2,9 @@ import { Component, ViewChild, ElementRef, effect, OnDestroy } from '@angular/co
 import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../auth/auth.service';
+import { ChatComponent } from '../chat/chat.component';
 /** Provide authenticated profile/logout and only real child routes; feature workers extend navigation. */
-@Component({selector:'app-shell',standalone:true,imports:[RouterOutlet,RouterLink,RouterLinkActive,ReactiveFormsModule],templateUrl:'./shell.component.html'})
+@Component({selector:'app-shell',standalone:true,imports:[RouterOutlet,RouterLink,RouterLinkActive,ReactiveFormsModule,ChatComponent],templateUrl:'./shell.component.html'})
 export class ShellComponent implements OnDestroy {
  @ViewChild('idleDialog') idleDialog?:ElementRef<HTMLDialogElement>;
  private restoreFocus?:HTMLElement;
