@@ -38,6 +38,15 @@ public class AuthService {
   String[] names={"miguel","rosa","admin"}; String[] full={"Miguel De La Cruz","Rosa Santos","Platform Facilitator"};
   for(int i=0;i<3;i++) jdbc.update("INSERT INTO users(id,username,password_hash,full_name,role,last_login) VALUES (?,?,?,?,?,?::timestamptz) ON CONFLICT(username) DO NOTHING",UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a1"+(i+1)),names[i],encoder.encode("demo-only"),full[i],i==2?"ROLE_ADMIN":"ROLE_CUSTOMER","2026-10-14T08:10:00Z");
  }
+ /** Restore seeded credentials and profile fields without deleting identities referenced by audit history.
+  * Notes: the coordinator holds identity locks; extra users are retained but runtime activity is cleared.
+  */
+ @Transactional public void restoreUsers(){
+  seedUsers();
+  jdbc.update("UPDATE users SET failed_attempts=0,locked=false,last_login='2026-10-14T08:10:00Z',updated_at=now()");
+  String[] names={"miguel","rosa","admin"};String[] full={"Miguel De La Cruz","Rosa Santos","Platform Facilitator"};
+  for(int i=0;i<3;i++)jdbc.update("UPDATE users SET password_hash=?,full_name=?,role=? WHERE username=?",encoder.encode("demo-only"),full[i],i==2?"ROLE_ADMIN":"ROLE_CUSTOMER",names[i]);
+ }
  /** Seed after Flyway and JPA initialize using the proxied transactional service. */
  @Bean ApplicationRunner identitySeed(AuthService service,@Value("${nova.seed-on-startup}") boolean enabled){return args->{if(enabled)service.seedUsers();};}
 }

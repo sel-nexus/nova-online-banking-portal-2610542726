@@ -25,3 +25,6 @@
 
 /* Extend support with the existing flat surfaces and readable help measure. */
 .support-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:24px}.support-grid article{border:1px solid var(--border);border-radius:var(--radius);padding:24px;background:var(--surface)}.support-section{margin-top:48px}.support-form{max-width:680px}.faq-item{border-bottom:1px solid var(--border);padding:12px 0}.faq-item button{width:100%;text-align:left;border:0;padding:12px 0;background:none;font-weight:600}.faq-item p{max-width:75ch}.support-form textarea[aria-invalid=true],.support-form select[aria-invalid=true]{border-color:var(--error)}.app-header nav{flex-wrap:wrap}
+
+/* Use existing banking surfaces for facilitator tasks and safe small-screen audit overflow. */
+.admin-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px}.admin-controls section{padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}.admin-controls h2{margin-top:0}.admin-controls p{max-width:65ch}.admin-audit td{overflow-wrap:anywhere;font-size:.875rem}.admin-audit td:last-child{white-space:normal}.admin-controls select[aria-invalid=true]{border-color:var(--error)}

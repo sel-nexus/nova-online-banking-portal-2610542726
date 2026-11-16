@@ -1,0 +1,52 @@
+<div class="page-heading"><div><p class="eyebrow">DEMONSTRATION OPERATIONS</p><h1>Facilitator controls</h1></div></div>
+@if (auth.isAdmin()) {
+  <p class="muted">Administrator-only tools. No live banking, communications or credit applications are performed.</p>
+  @if (error) { <p role="alert" class="field-error">{{error}}</p> }
+  <div class="admin-controls" [attr.aria-busy]="pending">
+    <section aria-labelledby="reset-heading">
+      <h2 id="reset-heading">Restore demonstration</h2>
+      <p>Restore original balances, accounts, transactions, offers and help content. Clear enquiries and interests, unlock users and revoke customer sessions. Audit history and administrator access remain.</p>
+      <button #resetTrigger type="button" class="primary" [disabled]="pending" (click)="confirm('reset',resetTrigger)">Facilitator Reset{{pending ? ' — working…' : ''}}</button>
+    </section>
+    <section aria-labelledby="persona-heading">
+      <h2 id="persona-heading">Switch customer persona</h2>
+      <p id="persona-guidance">Switching replaces your administrator session with customer permissions. To return, log out and sign in as admin / demo-only. No hidden administrator token is retained.</p>
+      <form (submit)="$event.preventDefault(); confirm('persona',personaTrigger)">
+        <label for="admin-persona">Customer persona</label>
+        <select id="admin-persona" [formControl]="username" aria-required="true" aria-describedby="persona-guidance persona-error" [attr.aria-invalid]="username.touched && username.invalid">
+          <option value="miguel">Miguel De La Cruz</option><option value="rosa">Rosa Santos</option>
+        </select>
+        <p id="persona-error" role="alert" class="field-error">@if (username.touched && username.invalid) {Choose Miguel or Rosa.}</p>
+        <button #personaTrigger type="submit" [disabled]="pending">Switch persona</button>
+      </form>
+    </section>
+    <section aria-labelledby="simulation-heading">
+      <h2 id="simulation-heading">Service-error simulation</h2>
+      <p>Business reads return 503 for this administrator session only. Health, authentication, logout and these controls remain available.</p>
+      <p role="status">{{serviceError === null ? 'Current state not loaded. Explicitly enable or disable below.' : serviceError ? 'Simulation enabled' : 'Simulation disabled'}}</p>
+      <div class="dialog-actions"><button type="button" [disabled]="pending" (click)="simulate(true)">Enable service error</button><button type="button" [disabled]="pending" (click)="simulate(false)">Disable service error</button></div>
+    </section>
+    <section aria-labelledby="timeout-heading">
+      <h2 id="timeout-heading">Session-timeout test</h2>
+      <p>This warns your current administrator session. Without a response, you will be signed out after 30 seconds.</p>
+      <button type="button" [disabled]="pending" (click)="timeout()">Test timeout warning</button>
+    </section>
+  </div>
+  <section class="support-section" aria-labelledby="audit-heading">
+    <div class="page-heading"><h2 id="audit-heading">Audit history</h2><button type="button" [disabled]="loading || pending" (click)="loadAudit()">Refresh audit</button></div>
+    @if (loading) { <p role="status">Loading audit history…</p> }
+    @else if (auditError) { <div role="alert"><p>{{auditError}}</p><button type="button" (click)="loadAudit()">Retry audit</button></div> }
+    @else if (events.length === 0) { <p>No audit events yet.</p> }
+    @else {
+      <div class="table-scroll"><table class="activity-table admin-audit"><caption class="visually-hidden">Persistent administrator audit metadata</caption>
+        <thead><tr><th scope="col">Action</th><th scope="col">Timestamp</th><th scope="col">Actor ID</th><th scope="col">Event ID</th></tr></thead>
+        <tbody>@for (event of events; track event.id) {<tr><td>{{event.action}}</td><td>{{event.timestamp | date:'medium':'UTC'}} UTC</td><td>{{event.userId || 'Removed identity'}}</td><td>{{event.id}}</td></tr>}</tbody>
+      </table></div>
+    }
+  </section>
+  <dialog #confirmDialog aria-modal="true" aria-labelledby="admin-confirm-title" (cancel)="$event.preventDefault(); cancel()" (click)="$event.target === confirmDialog && cancel()">
+    <h2 id="admin-confirm-title">{{confirmation === 'reset' ? 'Restore original fixtures?' : 'Replace administrator session?'}}</h2>
+    <p>{{confirmation === 'reset' ? 'Customer sessions will be revoked and demonstration activity cleared. Audit history is retained.' : 'You will become the selected customer immediately. Log out and sign in as admin to regain Facilitator controls.'}}</p>
+    <div class="dialog-actions"><button type="button" autofocus (click)="cancel()">Cancel</button><button type="button" class="primary" (click)="execute()">{{confirmation === 'reset' ? 'Confirm reset' : 'Confirm switch'}}</button></div>
+  </dialog>
+} @else { <p role="alert">Administrator access is required.</p> }

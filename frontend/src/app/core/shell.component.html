@@ -7,6 +7,7 @@
     <a routerLink="/products" routerLinkActive="active" ariaCurrentWhenActive="page">Products</a>
     <a routerLink="/offers" routerLinkActive="active" ariaCurrentWhenActive="page">Offers</a>
     <a routerLink="/support" routerLinkActive="active" ariaCurrentWhenActive="page">Support</a>
+    @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Facilitator</a> }
   </nav>
   <form class="global-search" (ngSubmit)="searchAccounts()" role="search">
     <label class="visually-hidden" for="global-search">Search accounts</label>

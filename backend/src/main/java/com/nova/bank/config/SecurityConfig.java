@@ -34,6 +34,13 @@ public class SecurityConfig {
     if(h!=null){
      try{if(!h.startsWith("Bearer ")||h.length()<8)throw new IllegalArgumentException("Invalid bearer");User u=tokens.verify(h.substring(7));SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(u.getId(),null,List.of(new SimpleGrantedAuthority(u.getRole()))));}
      catch(Exception e){SecurityContextHolder.clearContext();error(s,mapper,401,"Authentication required.");return;}
+     // Simulate business reads only; authentication, logout and administrator recovery remain reachable.
+     String path=r.getRequestURI().substring(r.getContextPath().length());
+     boolean businessRead=r.getMethod().equals("GET")&&(path.startsWith("/api/v1/portfolio/")||path.equals("/api/v1/accounts")||path.startsWith("/api/v1/accounts/")||path.equals("/api/v1/products")||path.equals("/api/v1/promotions")||path.startsWith("/api/v1/promotions/")||path.equals("/api/v1/support/content"));
+     if(businessRead){
+      try{if(tokens.serviceError(h.substring(7))){error(s,mapper,503,"Simulated service error. Disable it in Facilitator controls and retry.");return;}}
+      catch(Exception e){SecurityContextHolder.clearContext();error(s,mapper,401,"Authentication required.");return;}
+     }
     }
     chain.doFilter(r,s);
    }

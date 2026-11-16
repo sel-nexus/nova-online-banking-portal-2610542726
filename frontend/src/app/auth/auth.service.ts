@@ -29,7 +29,9 @@ export class AuthService implements OnDestroy {
   this.installSession(s);
  }));}
  /** Install a backend-issued session, including later administrator persona responses. */
- installSession(session:Session){const s={...session,expiresAt:Date.now()+session.expiresIn*1000};this.session.set(s);sessionStorage.setItem('nova.session',JSON.stringify(s));this.lastActivity=Date.now();this.warning.set(false);}
+ installSession(session:Session){const s={...session,expiresAt:Date.now()+session.expiresIn*1000};this.session.set(s);sessionStorage.setItem('nova.session',JSON.stringify(s));this.lastActivity=Date.now();this.warning.set(false);this.countdown.set(30);}
+ /** Expose controls only for the current live administrator, never a retained persona token. */
+ isAdmin(){return this.authenticated()&&this.session()?.user.role==='ROLE_ADMIN';}
  /** Require a live session rather than trusting stored profile presence. */
  authenticated(){const s=this.session();if(!s)return false;if(!s.expiresAt||s.expiresAt<=Date.now()){this.expire();return false;}return true;}
  /** Revoke before clearing; on network failure still clear locally and explicitly report the revocation uncertainty. */
@@ -55,6 +57,8 @@ export class AuthService implements OnDestroy {
 }
 /** Protect real feature routes using the tab's unexpired session. */
 export const sessionGuard:CanActivateFn=()=>{const auth=inject(AuthService);return auth.authenticated()||inject(Router).createUrlTree(['/login']);};
+/** Deny the facilitator route to customers and redirect anonymous sessions to login. */
+export const adminGuard:CanActivateFn=()=>{const auth=inject(AuthService),router=inject(Router);return auth.isAdmin()||router.createUrlTree([auth.authenticated()?'/home':'/login']);};
 /** Attach bearer only to our API; skip auth failures so login rejection stays inline. */
 export const authInterceptor:HttpInterceptorFn=(request,next)=>{
  const auth=inject(AuthService), api=inject(ApiService);

@@ -1437,6 +1437,344 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "label": "ChatController.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller",
+      "label": "ChatController",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L15",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_chatcontroller",
+      "label": ".ChatController()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L19",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_query",
+      "label": ".query()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L21",
+      "_java_ret": "ResponseEntity",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "isAuthenticated",
+            "receiver_type": "Authentication",
+            "lang": "java",
+            "line": "L22"
+          },
+          {
+            "callee": "getPrincipal",
+            "receiver_type": "Authentication",
+            "lang": "java",
+            "line": "L22"
+          },
+          {
+            "callee": "ok",
+            "receiver_type": "ResponseEntity",
+            "lang": "java",
+            "line": "L23"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos",
+      "label": "ChatDtos.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos",
+      "label": "ChatDtos",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos_chatdtos",
+      "label": ".ChatDtos()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos_request",
+      "label": "Request",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L17",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos_reply",
+      "label": "Reply",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L19",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext",
+      "label": "StrictText",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L21",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext_deserialize",
+      "label": ".deserialize()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L23",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "currentToken",
+            "receiver_type": "JsonParser",
+            "lang": "java",
+            "line": "L24"
+          },
+          {
+            "callee": "handleUnexpectedToken",
+            "receiver_type": "DeserializationContext",
+            "lang": "java",
+            "line": "L24"
+          },
+          {
+            "callee": "getText",
+            "receiver_type": "JsonParser",
+            "lang": "java",
+            "line": "L25"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatdtos_java_override",
+      "label": "Override",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "label": "ChatService.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "label": "ChatService",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L23",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatservice",
+      "label": ".ChatService()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "label": ".query()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L37",
+      "_java_ret": "Reply",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "isLocked",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L40"
+          },
+          {
+            "callee": "validate",
+            "receiver_type": "Validator",
+            "lang": "java",
+            "line": "L41"
+          },
+          {
+            "callee": "query",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L49"
+          },
+          {
+            "callee": "readTree",
+            "receiver_type": "ObjectMapper",
+            "lang": "java",
+            "line": "L51"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L53"
+          },
+          {
+            "callee": "getUsername",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L53"
+          },
+          {
+            "callee": "get",
+            "receiver_type": "JsonNode",
+            "lang": "java",
+            "line": "L54"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_validatecontent",
+      "label": ".validateContent()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L59",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "isObject",
+            "receiver_type": "JsonNode",
+            "lang": "java",
+            "line": "L60"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L61"
+          },
+          {
+            "callee": "get",
+            "receiver_type": "JsonNode",
+            "lang": "java",
+            "line": "L62"
+          },
+          {
+            "callee": "isTextual",
+            "receiver_type": "JsonNode",
+            "lang": "java",
+            "line": "L68"
+          },
+          {
+            "callee": "textValue",
+            "receiver_type": "JsonNode",
+            "lang": "java",
+            "line": "L68"
+          },
+          {
+            "callee": "isNull",
+            "receiver_type": "JsonNode",
+            "lang": "java",
+            "line": "L70"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_unavailable",
+      "label": ".unavailable()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L79",
+      "_java_ret": "ApiException",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_seedcontent",
+      "label": ".seedContent()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L83",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "Map",
+            "lang": "java",
+            "line": "L87"
+          },
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L97"
+          },
+          {
+            "callee": "writeValueAsString",
+            "receiver_type": "ObjectMapper",
+            "lang": "java",
+            "line": "L97"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatseed",
+      "label": ".chatSeed()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L101",
+      "_java_ret": "ApplicationRunner",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_main_java_com_nova_bank_common_apiexception",
       "label": "ApiException.java",
       "file_type": "code",
@@ -5319,6 +5657,500 @@
       "community": 2
     },
     {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "label": "ChatTests.java",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "label": "ChatTests",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L21",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_resetfeaturefixtures",
+      "label": ".resetFeatureFixtures()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L31",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L31"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_java_override",
+      "label": "Override",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "label": ".http()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L33",
+      "_java_ret": "Reply",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L34"
+          },
+          {
+            "callee": "writeValueAsString",
+            "receiver_type": "ObjectMapper",
+            "lang": "java",
+            "line": "L34"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "Map",
+            "lang": "java",
+            "line": "L34"
+          },
+          {
+            "callee": "getResponse",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L36"
+          },
+          {
+            "callee": "readTree",
+            "receiver_type": "ObjectMapper",
+            "lang": "java",
+            "line": "L37"
+          },
+          {
+            "callee": "readValue",
+            "receiver_type": "ObjectMapper",
+            "lang": "java",
+            "line": "L38"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "label": ".exact()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L41",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L43"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelbalanceisexact",
+      "label": ".miguelBalanceIsExact()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosabalanceisexact",
+      "label": ".rosaBalanceIsExact()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L52",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelcardisexact",
+      "label": ".miguelCardIsExact()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L54",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosahasnoactivecard",
+      "label": ".rosaHasNoActiveCard()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L56",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_migueloffersareexact",
+      "label": ".miguelOffersAreExact()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L58",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosaofferisexact",
+      "label": ".rosaOfferIsExact()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L60",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_handoffisexplicitlysimulatedforallpersonas",
+      "label": ".handoffIsExplicitlySimulatedForAllPersonas()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L62",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L63"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_id",
+      "label": ".id()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_genericpersonaandcurrentusernamearesafe",
+      "label": ".genericPersonaAndCurrentUsernameAreSafe()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L68",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L69"
+          },
+          {
+            "callee": "randomUUID",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L70"
+          },
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L70"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_unknownandhostilepromptsareguidance",
+      "label": ".unknownAndHostilePromptsAreGuidance()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L78",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L79"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L85"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_httpstrictvalidationrejectsbadbodieswithoutleakingtext",
+      "label": ".httpStrictValidationRejectsBadBodiesWithoutLeakingText()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L88",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "asList",
+            "receiver_type": "Arrays",
+            "lang": "java",
+            "line": "L90"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L90"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "Map",
+            "lang": "java",
+            "line": "L90"
+          },
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L92"
+          },
+          {
+            "callee": "writeValueAsString",
+            "receiver_type": "ObjectMapper",
+            "lang": "java",
+            "line": "L92"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_servicevalidationandmissingidentityfailclosed",
+      "label": ".serviceValidationAndMissingIdentityFailClosed()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L97",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "asList",
+            "receiver_type": "Arrays",
+            "lang": "java",
+            "line": "L98"
+          },
+          {
+            "callee": "randomUUID",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L98"
+          },
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L100"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_authenticationisrequired",
+      "label": ".authenticationIsRequired()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L104",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "randomUUID",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L106"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L107"
+          },
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L107"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_conversationsandactivityareneverretained",
+      "label": ".conversationsAndActivityAreNeverRetained()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L111",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L113"
+          },
+          {
+            "callee": "queryForList",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L115"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L116"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_counts",
+      "label": ".counts()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L119",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "queryForList",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L119"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L119"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_seedisidempotentandrespectsstartupgate",
+      "label": ".seedIsIdempotentAndRespectsStartupGate()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L121",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L122"
+          },
+          {
+            "callee": "queryForList",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L123"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L125"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_missingmalformedandunsafecontentreturnsafe503",
+      "label": ".missingMalformedAndUnsafeContentReturnSafe503()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L133",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L134"
+          },
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L135"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L137"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_safe503",
+      "label": ".safe503()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L146",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L148"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_test_java_com_nova_bank_offers_offertests",
       "label": "OfferTests.java",
       "file_type": "code",
@@ -7605,6 +8437,91 @@
       "community": 14
     },
     {
+      "id": "frontend_e2e_chat_spec",
+      "label": "chat.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L1",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getByRole",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L19"
+          },
+          {
+            "callee": "getByText",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L22"
+          },
+          {
+            "callee": "locator",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L22"
+          },
+          {
+            "callee": "evaluate",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L40"
+          },
+          {
+            "callee": "screenshot",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L44"
+          },
+          {
+            "callee": "getByLabel",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L46"
+          },
+          {
+            "callee": "goto",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L52"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_chat_spec_query",
+      "label": "query()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L6",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "waitForResponse",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L7"
+          },
+          {
+            "callee": "locator",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L8"
+          },
+          {
+            "callee": "getByLabel",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L9"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_e2e_helpers",
       "label": "helpers.ts",
       "file_type": "code",
@@ -9197,6 +10114,387 @@
       "community": 0
     },
     {
+      "id": "frontend_src_app_chat_chat_component",
+      "label": "chat.component.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatmessage",
+      "label": "ChatMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent",
+      "label": "ChatComponent",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L22",
+      "_callable": true,
+      "_callable_class": true,
+      "_ts_fields": {
+        "auth": "AuthService",
+        "form": "FormGroup",
+        "message": "FormControl",
+        "request": "Subscription",
+        "service": "ChatService",
+        "trigger": "HTMLElement"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_ts_component",
+      "label": "Component",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_ts_viewchild",
+      "label": "ViewChild",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_show",
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_minimize",
+      "label": ".minimize()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_close",
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_escape",
+      "label": ".escape()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L47",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "preventDefault",
+            "receiver_type": "Event",
+            "lang": "typescript",
+            "line": "L47"
+          },
+          {
+            "callee": "stopPropagation",
+            "receiver_type": "Event",
+            "lang": "typescript",
+            "line": "L47"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_send",
+      "label": ".send()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L49",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "markAsTouched",
+            "receiver_type": "FormControl",
+            "lang": "typescript",
+            "line": "L49"
+          },
+          {
+            "callee": "reset",
+            "receiver_type": "FormControl",
+            "lang": "typescript",
+            "line": "L49"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_topic",
+      "label": ".topic()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L51",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_retry",
+      "label": ".retry()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "label": ".submit()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L55",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_navigable",
+      "label": ".navigable()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_schedulefocus",
+      "label": ".scheduleFocus()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_restorefocus",
+      "label": ".restoreFocus()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L70",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_clear",
+      "label": ".clear()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L72",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "unsubscribe",
+            "receiver_type": "Subscription",
+            "lang": "typescript",
+            "line": "L72"
+          },
+          {
+            "callee": "reset",
+            "receiver_type": "FormControl",
+            "lang": "typescript",
+            "line": "L72"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_component_chatcomponent_ngondestroy",
+      "label": ".ngOnDestroy()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L74",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_service",
+      "label": "chat.service.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_service_chatreply",
+      "label": "ChatReply",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L5",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_service_chatservice",
+      "label": "ChatService",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_ts_fields": {
+        "api": "ApiService"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_service_ts_injectable",
+      "label": "Injectable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_service_chatservice_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_service_chatservice_query",
+      "label": ".query()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec",
+      "label": "chat.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_childcomponent",
+      "label": "ChildComponent",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_ts_component",
+      "label": "Component",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_hostcomponent",
+      "label": "HostComponent",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L16",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_balance",
+      "label": "balance",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_timed",
+      "label": "timed()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_setup",
+      "label": "setup()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_install",
+      "label": "install()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_click",
+      "label": "click()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_input",
+      "label": "input()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_chat_chat_spec_reply",
+      "label": "reply()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_src_app_core_api_service",
       "label": "api.service.ts",
       "file_type": "code",
@@ -9341,7 +10639,7 @@
       "label": "ShellComponent",
       "file_type": "code",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L7",
+      "source_location": "L8",
       "_callable": true,
       "_callable_class": true,
       "_ts_fields": {
@@ -9376,7 +10674,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L13",
+      "source_location": "L14",
       "_callable": true,
       "metadata": {
         "unresolved_calls": [
@@ -9384,7 +10682,7 @@
             "callee": "focus",
             "receiver_type": "HTMLElement",
             "lang": "typescript",
-            "line": "L13"
+            "line": "L14"
           }
         ]
       },
@@ -9396,7 +10694,7 @@
       "label": ".searchAccounts()",
       "file_type": "code",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L15",
+      "source_location": "L16",
       "_callable": true,
       "metadata": {
         "unresolved_calls": [
@@ -9404,7 +10702,7 @@
             "callee": "navigate",
             "receiver_type": "Router",
             "lang": "typescript",
-            "line": "L15"
+            "line": "L16"
           }
         ]
       },
@@ -9415,7 +10713,7 @@
       "label": ".toggleAlerts()",
       "file_type": "code",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "_callable": true,
       "_origin": "ast"
     },
@@ -9424,7 +10722,7 @@
       "label": ".keepAlive()",
       "file_type": "code",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "_callable": true,
       "_origin": "ast",
       "community": 0
@@ -9434,7 +10732,7 @@
       "label": ".ngOnDestroy()",
       "file_type": "code",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "_callable": true,
       "_origin": "ast",
       "community": 0
@@ -10865,6 +12163,79 @@
       "community": 1
     },
     {
+      "id": "org_springframework_web_bind_annotation_postmapping",
+      "label": "org.springframework.web.bind.annotation.PostMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_requestmapping",
+      "label": "org.springframework.web.bind.annotation.RequestMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_restcontroller",
+      "label": "org.springframework.web.bind.annotation.RestController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "com_fasterxml_jackson_core_jsonparser",
+      "label": "com.fasterxml.jackson.core.JsonParser",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "com_fasterxml_jackson_databind_deserializationcontext",
+      "label": "com.fasterxml.jackson.databind.DeserializationContext",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "com_fasterxml_jackson_databind_jsondeserializer",
+      "label": "com.fasterxml.jackson.databind.JsonDeserializer",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "com_fasterxml_jackson_databind_jsonnode",
+      "label": "com.fasterxml.jackson.databind.JsonNode",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "com_fasterxml_jackson_databind_objectmapper",
+      "label": "com.fasterxml.jackson.databind.ObjectMapper",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3
+    },
+    {
+      "id": "jakarta_validation_validator",
+      "label": "jakarta.validation.Validator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
       "id": "org_springframework_web_bind_methodargumentnotvalidexception",
       "label": "org.springframework.web.bind.MethodArgumentNotValidException",
       "file_type": "code",
@@ -10928,15 +12299,6 @@
       "community": 1
     },
     {
-      "id": "com_fasterxml_jackson_databind_objectmapper",
-      "label": "com.fasterxml.jackson.databind.ObjectMapper",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 3
-    },
-    {
       "id": "org_springframework_security_config_annotation_web_builders_httpsecurity",
       "label": "org.springframework.security.config.annotation.web.builders.HttpSecurity",
       "file_type": "code",
@@ -10957,38 +12319,6 @@
     {
       "id": "org_springframework_data_jpa_repository_query",
       "label": "org.springframework.data.jpa.repository.Query",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast"
-    },
-    {
-      "id": "com_fasterxml_jackson_core_jsonparser",
-      "label": "com.fasterxml.jackson.core.JsonParser",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast"
-    },
-    {
-      "id": "com_fasterxml_jackson_databind_deserializationcontext",
-      "label": "com.fasterxml.jackson.databind.DeserializationContext",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast"
-    },
-    {
-      "id": "com_fasterxml_jackson_databind_jsondeserializer",
-      "label": "com.fasterxml.jackson.databind.JsonDeserializer",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast"
-    },
-    {
-      "id": "jakarta_validation_validator",
-      "label": "jakarta.validation.Validator",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
@@ -13299,6 +14629,781 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "org_springframework_http_httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "org_springframework_http_responseentity",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "org_springframework_security_core_authentication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "org_springframework_web_bind_annotation_postmapping",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "org_springframework_web_bind_annotation_requestmapping",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "org_springframework_web_bind_annotation_restcontroller",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller",
+      "target": "org_springframework_web_bind_annotation_restcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller",
+      "target": "org_springframework_web_bind_annotation_requestmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_chatcontroller",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_chatcontroller",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_query",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_query",
+      "target": "org_springframework_security_core_authentication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_query",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_request",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_query",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_query",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_reply",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller_chatcontroller_query",
+      "target": "org_springframework_web_bind_annotation_postmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos",
+      "target": "com_fasterxml_jackson_core_jsonparser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos",
+      "target": "com_fasterxml_jackson_databind_deserializationcontext",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos",
+      "target": "com_fasterxml_jackson_databind_jsondeserializer",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos_chatdtos",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_request",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_reply",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_chatdtos",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext",
+      "target": "com_fasterxml_jackson_databind_jsondeserializer",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext_deserialize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext_deserialize",
+      "target": "com_fasterxml_jackson_core_jsonparser",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext_deserialize",
+      "target": "com_fasterxml_jackson_databind_deserializationcontext",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatdtos_stricttext_deserialize",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_java_override",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatDtos.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "com_fasterxml_jackson_databind_jsonnode",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "com_fasterxml_jackson_databind_objectmapper",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "jakarta_validation_validator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "org_springframework_boot_applicationrunner",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "org_springframework_http_httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "org_springframework_jdbc_core_jdbctemplate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "org_springframework_stereotype_service",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "org_springframework_stereotype_service",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "org_springframework_jdbc_core_jdbctemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "com_fasterxml_jackson_databind_objectmapper",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "jakarta_validation_validator",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatservice",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatservice",
+      "target": "org_springframework_jdbc_core_jdbctemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatservice",
+      "target": "com_fasterxml_jackson_databind_objectmapper",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatservice",
+      "target": "jakarta_validation_validator",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_request",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_reply",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_validatecontent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_validatecontent",
+      "target": "com_fasterxml_jackson_databind_jsonnode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L59",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_unavailable",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_unavailable",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_seedcontent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_seedcontent",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L83",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatseed",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatseed",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L101",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatseed",
+      "target": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L101",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatseed",
+      "target": "org_springframework_boot_applicationrunner",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L101",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_chatseed",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L101",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_validatecontent",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_unavailable",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_validatecontent",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_unavailable",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L60",
+      "weight": 1.0,
       "_origin": "ast"
     },
     {
@@ -19629,6 +21734,665 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "backend_src_main_java_com_nova_bank_auth_tokenservice_tokenservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "org_springframework_dao_dataintegrityviolationexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "org_springframework_http_httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_main_java_com_nova_bank_auth_tokenservice_tokenservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_resetfeaturefixtures",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_resetfeaturefixtures",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_java_override",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_reply",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "target": "backend_src_main_java_com_nova_bank_chat_chatdtos_reply",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelbalanceisexact",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelbalanceisexact",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L50",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosabalanceisexact",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosabalanceisexact",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelcardisexact",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelcardisexact",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L54",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosahasnoactivecard",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosahasnoactivecard",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_migueloffersareexact",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_migueloffersareexact",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosaofferisexact",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosaofferisexact",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L60",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_handoffisexplicitlysimulatedforallpersonas",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_handoffisexplicitlysimulatedforallpersonas",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_id",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_genericpersonaandcurrentusernamearesafe",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_genericpersonaandcurrentusernamearesafe",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L68",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_unknownandhostilepromptsareguidance",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_unknownandhostilepromptsareguidance",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L78",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_httpstrictvalidationrejectsbadbodieswithoutleakingtext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_httpstrictvalidationrejectsbadbodieswithoutleakingtext",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L88",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_servicevalidationandmissingidentityfailclosed",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_servicevalidationandmissingidentityfailclosed",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L97",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_authenticationisrequired",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_authenticationisrequired",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_conversationsandactivityareneverretained",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_conversationsandactivityareneverretained",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L111",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_counts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_seedisidempotentandrespectsstartupgate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_seedisidempotentandrespectsstartupgate",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L121",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_missingmalformedandunsafecontentreturnsafe503",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_missingmalformedandunsafecontentreturnsafe503",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L133",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_safe503",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelbalanceisexact",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosabalanceisexact",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_miguelcardisexact",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosahasnoactivecard",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_migueloffersareexact",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_rosaofferisexact",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_handoffisexplicitlysimulatedforallpersonas",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_genericpersonaandcurrentusernamearesafe",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_genericpersonaandcurrentusernamearesafe",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_unknownandhostilepromptsareguidance",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_conversationsandactivityareneverretained",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_counts",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_conversationsandactivityareneverretained",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_missingmalformedandunsafecontentreturnsafe503",
+      "target": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_safe503",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_test_java_com_nova_bank_offers_offertests",
       "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
       "relation": "imports",
@@ -22448,6 +25212,104 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_e2e_chat_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_e2e_helpers",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_e2e_helpers_captureconsole",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_e2e_helpers_uilogin",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_e2e_helpers_uilogout",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_src_app_chat_chat_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_src_app_chat_chat_service_chatreply",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_e2e_chat_spec_query",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_chat_spec",
+      "target": "frontend_e2e_chat_spec_query",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/chat.spec.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_e2e_helpers",
       "target": "ref_playwright_test",
       "relation": "imports_from",
@@ -25087,6 +27949,901 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "ref_angular_forms",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "ref_angular_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "ref_rxjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "frontend_src_app_auth_auth_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "frontend_src_app_auth_auth_service_authservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "frontend_src_app_chat_chat_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "frontend_src_app_chat_chat_service_chatreply",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "frontend_src_app_chat_chat_service_chatservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "frontend_src_app_chat_chat_component_chatmessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_ts_component",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_ts_viewchild",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_ts_viewchild",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_ts_viewchild",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_show",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_minimize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_close",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_escape",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_send",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_topic",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_retry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_navigable",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_schedulefocus",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_restorefocus",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_clear",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_ngondestroy",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_constructor",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_clear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_show",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_schedulefocus",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_minimize",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_restorefocus",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_close",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_clear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_close",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_restorefocus",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_escape",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_close",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_send",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_topic",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_retry",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_schedulefocus",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_ngondestroy",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_clear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service",
+      "target": "ref_rxjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service",
+      "target": "frontend_src_app_core_api_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service",
+      "target": "frontend_src_app_core_api_service_apiservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service",
+      "target": "frontend_src_app_chat_chat_service_chatreply",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service",
+      "target": "frontend_src_app_chat_chat_service_chatservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service_chatservice",
+      "target": "frontend_src_app_chat_chat_service_ts_injectable",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service_chatservice",
+      "target": "frontend_src_app_chat_chat_service_chatservice_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service_chatservice",
+      "target": "frontend_src_app_chat_chat_service_chatservice_query",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "ref_angular_platform_browser",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "ref_angular_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "ref_angular_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "ref_angular_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_auth_auth_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_auth_auth_service_authservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_auth_auth_service_authinterceptor",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_core_shell_component",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_core_shell_component_shellcomponent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_component",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_service_chatreply",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_service_chatservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_childcomponent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec_childcomponent",
+      "target": "frontend_src_app_chat_chat_spec_ts_component",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_hostcomponent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec_hostcomponent",
+      "target": "frontend_src_app_chat_chat_spec_ts_component",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_balance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_timed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_setup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_install",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_click",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_input",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_reply",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_timed",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec_setup",
+      "target": "frontend_src_app_chat_chat_spec_install",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec_click",
+      "target": "frontend_src_app_chat_chat_spec_click",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_setup",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_click",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_reply",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_input",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_spec_install",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_core_api_service",
       "target": "ref_angular_core",
       "relation": "imports_from",
@@ -25290,11 +29047,33 @@
     },
     {
       "source": "frontend_src_app_core_shell_component",
+      "target": "frontend_src_app_chat_chat_component",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/shell.component.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_shell_component",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/shell.component.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_shell_component",
       "target": "frontend_src_app_core_shell_component_shellcomponent",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25304,7 +29083,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -25315,7 +29094,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -25326,7 +29105,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25336,7 +29115,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25346,7 +29125,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25356,7 +29135,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25366,7 +29145,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -28118,13 +31897,57 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_chat_chat_component_chatmessage",
+      "target": "frontend_src_app_chat_chat_service_chatreply",
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_constructor",
+      "target": "frontend_src_app_auth_auth_service_authservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_constructor",
+      "target": "frontend_src_app_chat_chat_service_chatservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service_chatservice_constructor",
+      "target": "frontend_src_app_core_api_service_apiservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_core_shell_component_shellcomponent_constructor",
       "target": "frontend_src_app_auth_auth_service_authservice",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -28301,6 +32124,50 @@
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/nova/bank/auth/AuthService.java",
       "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatcontroller",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatController.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -28558,6 +32425,50 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "backend_src_main_java_com_nova_bank_auth_tokenservice_tokenservice",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "backend_src_main_java_com_nova_bank_auth_user_user",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_test_java_com_nova_bank_offers_offertests",
       "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
       "relation": "imports",
@@ -28698,6 +32609,18 @@
       "confidence_score": 0.85,
       "source_file": "backend/src/main/java/com/nova/bank/auth/AuthService.java",
       "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_chat_chatservice_chatservice_query",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/chat/ChatService.java",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -29094,6 +33017,126 @@
       "confidence_score": 0.85,
       "source_file": "backend/src/test/java/com/nova/bank/auth/AuthTests.java",
       "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_http",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception_status",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_exact",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_unknownandhostilepromptsareguidance",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_httpstrictvalidationrejectsbadbodieswithoutleakingtext",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_httpstrictvalidationrejectsbadbodieswithoutleakingtext",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception_status",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_authenticationisrequired",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_authenticationisrequired",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception_status",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_conversationsandactivityareneverretained",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_missingmalformedandunsafecontentreturnsafe503",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_safe503",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception_status",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L149",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -29542,6 +33585,18 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_activity_activity_spec_setup",
+      "target": "frontend_e2e_chat_spec_query",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/activity/activity.spec.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_app_routes",
       "target": "frontend_src_app_auth_auth_service_sessionguard",
       "relation": "indirect_call",
@@ -29562,6 +33617,54 @@
       "confidence_score": 0.85,
       "source_file": "frontend/src/app/auth/auth.spec.ts",
       "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec_setup",
+      "target": "frontend_src_app_auth_auth_service_authinterceptor",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_chat_chat_component_chatcomponent_topic",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_spec",
+      "target": "frontend_src_app_auth_auth_service_authinterceptor",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/chat/chat.spec.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec_setup",
+      "target": "frontend_e2e_chat_spec_query",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -29590,8 +33693,32 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_statements_statement_spec",
+      "target": "frontend_e2e_chat_spec_query",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/statements/statement.spec.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_support_support_spec_setup",
       "target": "frontend_src_app_auth_auth_service_authinterceptor",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/support/support.spec.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_support_support_spec_setup",
+      "target": "frontend_e2e_chat_spec_query",
       "relation": "indirect_call",
       "context": "collection",
       "confidence": "INFERRED",
@@ -29710,6 +33837,54 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_show",
+      "target": "frontend_src_app_auth_auth_service_authservice_authenticated",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "target": "frontend_src_app_auth_auth_service_authservice_authenticated",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_component_chatcomponent_submit",
+      "target": "frontend_src_app_chat_chat_service_chatservice_query",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/chat/chat.component.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_chat_chat_service_chatservice_query",
+      "target": "frontend_src_app_core_api_service_apiservice_post",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/chat/chat.service.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_core_shell_component_shellcomponent_keepalive",
       "target": "frontend_src_app_auth_auth_service_authservice_keepalive",
       "relation": "calls",
@@ -29717,7 +33892,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "frontend/src/app/core/shell.component.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -30718,6 +34893,30 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_genericpersonaandcurrentusernamearesafe",
+      "target": "backend_src_main_java_com_nova_bank_auth_tokenservice_tokenservice_issue",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_chat_chattests_chattests_authenticationisrequired",
+      "target": "backend_src_main_java_com_nova_bank_auth_tokenservice_tokenservice_issue",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/chat/ChatTests.java",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_test_java_com_nova_bank_portfolio_portfoliotests_portfoliotests_postgresenforcesaccountintegrityandcascades",
       "target": "backend_src_main_java_com_nova_bank_portfolio_accountrepository_accountrepository_findbyuseridorderbyidasc",
       "relation": "calls",
@@ -30977,6 +35176,19 @@
     },
     {
       "source": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
       "target": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice_portfolioseed",
       "relation": "references",
       "confidence": "EXTRACTED",
@@ -31004,15 +35216,15 @@
     },
     {
       "source": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
-      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_supportseed",
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
-      "source_location": "L104",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L84",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_supportseed",
       "_tgt": "backend_src_main_java_com_nova_bank_auth_authservice_authservice"
     },
     {
@@ -31137,6 +35349,58 @@
       "_tgt": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice_requirecustomer"
     },
     {
+      "source": "backend_src_main_java_com_nova_bank_auth_user_user",
+      "target": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/Inquiry.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry",
+      "_tgt": "backend_src_main_java_com_nova_bank_auth_user_user"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_user_user",
+      "target": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry_getuser",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/Inquiry.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry_getuser",
+      "_tgt": "backend_src_main_java_com_nova_bank_auth_user_user"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_user_user",
+      "target": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry_inquiry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/Inquiry.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry_inquiry",
+      "_tgt": "backend_src_main_java_com_nova_bank_auth_user_user"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_user_user",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_requireuser",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_requireuser",
+      "_tgt": "backend_src_main_java_com_nova_bank_auth_user_user"
+    },
+    {
       "source": "backend_src_main_java_com_nova_bank_auth_user_java_override",
       "target": "backend_src_main_java_com_nova_bank_auth_user_user_hashcode",
       "relation": "references",
@@ -31148,6 +35412,32 @@
       "_origin": "ast",
       "_src": "backend_src_main_java_com_nova_bank_auth_user_java_override",
       "_tgt": "backend_src_main_java_com_nova_bank_auth_user_user_hashcode"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
@@ -31191,32 +35481,6 @@
     },
     {
       "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
-      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
-      "source_location": "L22",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
-      "_tgt": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository"
-    },
-    {
-      "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
-      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
-      "source_location": "L26",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
-      "_tgt": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository"
-    },
-    {
-      "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
       "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
       "relation": "references",
       "confidence": "EXTRACTED",
@@ -31225,7 +35489,33 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "_src": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "_src": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "_tgt": "backend_src_test_java_com_nova_bank_offers_offertests_offertests"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice",
+      "_tgt": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_supportservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_supportservice",
       "_tgt": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository"
     },
     {
@@ -31464,8 +35754,8 @@
       "weight": 1.0,
       "context": "attribute",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping",
@@ -31477,8 +35767,8 @@
       "weight": 1.0,
       "context": "attribute",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_product",
@@ -31490,8 +35780,8 @@
       "weight": 1.0,
       "context": "generic_arg",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_products",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerdtos_product"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offerdtos_product",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_products"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
@@ -31503,8 +35793,8 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
@@ -31516,8 +35806,8 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
@@ -31529,8 +35819,8 @@
       "weight": 1.0,
       "context": "generic_arg",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_interest",
@@ -31542,8 +35832,8 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_expressinterest",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerdtos_interest"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offerdtos_interest",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_expressinterest"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
@@ -31555,8 +35845,8 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "_src": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice"
+      "_src": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "_tgt": "backend_src_test_java_com_nova_bank_offers_offertests_offertests"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
@@ -31568,8 +35858,8 @@
       "weight": 1.0,
       "context": "generic_arg",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_promotion_promotion"
+      "_src": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
@@ -31581,8 +35871,8 @@
       "weight": 1.0,
       "context": "generic_arg",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository_catalogue",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_promotion_promotion"
+      "_src": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository_catalogue"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_promotion_java_override",
@@ -31594,8 +35884,8 @@
       "weight": 1.0,
       "context": "attribute",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_hashcode",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_promotion_java_override"
+      "_src": "backend_src_main_java_com_nova_bank_offers_promotion_java_override",
+      "_tgt": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_hashcode"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
@@ -31607,8 +35897,8 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "_src": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
-      "_tgt": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository"
+      "_src": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "_tgt": "backend_src_test_java_com_nova_bank_offers_offertests_offertests"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_portfolio_account_account",
@@ -31884,6 +36174,188 @@
       "_tgt": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests"
     },
     {
+      "source": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry",
+      "target": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/InquiryRepository.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry",
+      "target": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository_findbyreferencenumber",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/InquiryRepository.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository_findbyreferencenumber",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_inquiry_java_override",
+      "target": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry_hashcode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/Inquiry.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_inquiry_inquiry_hashcode",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_inquiry_java_override"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_supportservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_supportservice",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository",
+      "target": "backend_src_test_java_com_nova_bank_support_supporttests_supporttests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/support/SupportTests.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_test_java_com_nova_bank_support_supporttests_supporttests",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_inquiryrepository_inquiryrepository"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportdtos_request",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_submit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_submit",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportdtos_request"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportdtos_request",
+      "target": "backend_src_test_java_com_nova_bank_support_supporttests_supporttests_valid",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/support/SupportTests.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "_src": "backend_src_test_java_com_nova_bank_support_supporttests_supporttests_valid",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportdtos_request"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportdtos_receipt",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_submit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_submit",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportdtos_receipt"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportdtos_contact",
+      "target": "backend_src_main_java_com_nova_bank_support_supportdtos_content",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportDtos.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportdtos_content",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportdtos_contact"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportdtos_branch",
+      "target": "backend_src_main_java_com_nova_bank_support_supportdtos_content",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportDtos.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportdtos_content",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportdtos_branch"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportdtos_faq",
+      "target": "backend_src_main_java_com_nova_bank_support_supportdtos_content",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportDtos.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportdtos_content",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportdtos_faq"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportdtos_content",
+      "target": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_content",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/support/SupportService.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice_content",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportdtos_content"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice",
+      "target": "backend_src_test_java_com_nova_bank_support_supporttests_supporttests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/support/SupportTests.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_test_java_com_nova_bank_support_supporttests_supporttests",
+      "_tgt": "backend_src_main_java_com_nova_bank_support_supportservice_supportservice"
+    },
+    {
       "source": "inject",
       "target": "frontend_src_app_activity_activity_component_activitycomponent_constructor",
       "relation": "references",
@@ -31925,6 +36397,32 @@
       "_tgt": "frontend_src_app_core_shell_component_shellcomponent_constructor"
     },
     {
+      "source": "frontend_src_app_auth_auth_service_authservice",
+      "target": "frontend_src_app_support_support_component_supportcomponent_constructor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/support/support.component.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "frontend_src_app_support_support_component_supportcomponent_constructor",
+      "_tgt": "frontend_src_app_auth_auth_service_authservice"
+    },
+    {
+      "source": "frontend_src_app_core_api_service_apiservice",
+      "target": "frontend_src_app_offers_offer_service_offerservice_constructor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "frontend_src_app_core_api_service_apiservice",
+      "_tgt": "frontend_src_app_offers_offer_service_offerservice_constructor"
+    },
+    {
       "source": "frontend_src_app_core_api_service_apiservice",
       "target": "frontend_src_app_portfolio_portfolio_service_portfolioservice_constructor",
       "relation": "references",
@@ -31952,15 +36450,15 @@
     },
     {
       "source": "frontend_src_app_core_api_service_apiservice",
-      "target": "frontend_src_app_offers_offer_service_offerservice_constructor",
+      "target": "frontend_src_app_support_support_service_supportservice_constructor",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/app/offers/offer.service.ts",
-      "source_location": "L16",
+      "source_file": "frontend/src/app/support/support.service.ts",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "frontend_src_app_offers_offer_service_offerservice_constructor",
+      "_src": "frontend_src_app_support_support_service_supportservice_constructor",
       "_tgt": "frontend_src_app_core_api_service_apiservice"
     },
     {
@@ -31973,8 +36471,8 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "frontend_src_app_offers_offers_component_offerscomponent_constructor",
-      "_tgt": "frontend_src_app_core_notification_service_notificationservice"
+      "_src": "frontend_src_app_core_notification_service_notificationservice",
+      "_tgt": "frontend_src_app_offers_offers_component_offerscomponent_constructor"
     },
     {
       "source": "frontend_src_app_offers_offer_service_offerservice",
@@ -31986,15 +36484,15 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "frontend_src_app_offers_offers_component_offerscomponent_constructor",
-      "_tgt": "frontend_src_app_offers_offer_service_offerservice"
+      "_src": "frontend_src_app_offers_offer_service_offerservice",
+      "_tgt": "frontend_src_app_offers_offers_component_offerscomponent_constructor"
     }
   ],
   "metadata": {
-    "built_at": "2026-11-16T07:33:11.433151+00:00",
+    "built_at": "2026-11-16T07:44:55.993961+00:00",
     "version": "graph_update-v1",
     "codebase_root": "/data/artifacts-v2/T0132PcJVCRTV008113112610542726/developer",
     "force": true,
-    "files_scanned": 377
+    "files_scanned": 392
   }
 }
