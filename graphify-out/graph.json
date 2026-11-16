@@ -688,13 +688,12 @@
       "community": 7
     },
     {
-      "id": "postmapping",
+      "id": "backend_src_main_java_com_nova_bank_auth_authcontroller_java_postmapping",
       "label": "PostMapping",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "_origin": "ast",
-      "community": 7
+      "_origin": "ast"
     },
     {
       "id": "backend_src_main_java_com_nova_bank_auth_authcontroller_authcontroller_logout",
@@ -2109,6 +2108,654 @@
       "source_location": "",
       "_origin": "ast",
       "community": 3
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller",
+      "label": "OfferController.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "label": "OfferController",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_restcontroller",
+      "label": "RestController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_requestmapping",
+      "label": "RequestMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_offercontroller",
+      "label": ".OfferController()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_products",
+      "label": ".products()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L12",
+      "_java_ret": "ResponseEntity",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "ok",
+            "receiver_type": "ResponseEntity",
+            "lang": "java",
+            "line": "L13"
+          },
+          {
+            "callee": "getPrincipal",
+            "receiver_type": "Authentication",
+            "lang": "java",
+            "line": "L13"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping",
+      "label": "GetMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list",
+      "label": ".list()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L14",
+      "_java_ret": "ResponseEntity",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "ok",
+            "receiver_type": "ResponseEntity",
+            "lang": "java",
+            "line": "L15"
+          },
+          {
+            "callee": "getPrincipal",
+            "receiver_type": "Authentication",
+            "lang": "java",
+            "line": "L15"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
+      "label": ".detail()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L16",
+      "_java_ret": "ResponseEntity",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "ok",
+            "receiver_type": "ResponseEntity",
+            "lang": "java",
+            "line": "L17"
+          },
+          {
+            "callee": "getPrincipal",
+            "receiver_type": "Authentication",
+            "lang": "java",
+            "line": "L17"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_interest",
+      "label": ".interest()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L18",
+      "_java_ret": "ResponseEntity",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "ok",
+            "receiver_type": "ResponseEntity",
+            "lang": "java",
+            "line": "L19"
+          },
+          {
+            "callee": "getPrincipal",
+            "receiver_type": "Authentication",
+            "lang": "java",
+            "line": "L19"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_postmapping",
+      "label": "PostMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_parseid",
+      "label": ".parseId()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L21",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "fromString",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L21"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerdtos",
+      "label": "OfferDtos.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos",
+      "label": "OfferDtos",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos_offerdtos",
+      "label": ".OfferDtos()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerdtos_product",
+      "label": "Product",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "label": "Offer",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerdtos_interest",
+      "label": "Interest",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L14",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "label": "OfferService.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "label": "OfferService",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L18",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
+      "label": ".OfferService()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_products",
+      "label": ".products()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L31",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "List",
+            "lang": "java",
+            "line": "L34"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
+      "label": ".list()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail",
+      "label": ".detail()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L43",
+      "_java_ret": "Offer",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_expressinterest",
+      "label": ".expressInterest()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L49",
+      "_java_ret": "Interest",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L52"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L53"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_segment",
+      "label": ".segment()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L57",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getRole",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L59"
+          },
+          {
+            "callee": "getUsername",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L60"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "label": ".permitted()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L67",
+      "_java_ret": "Promotion",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "label": ".dto()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L76",
+      "_java_ret": "Offer",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L77"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_clearinterests",
+      "label": ".clearInterests()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L82",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L82"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_seedpromotions",
+      "label": ".seedPromotions()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L84",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L97"
+          },
+          {
+            "callee": "fromString",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L100"
+          },
+          {
+            "callee": "parse",
+            "receiver_type": "LocalDate",
+            "lang": "java",
+            "line": "L101"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "label": ".offerSeed()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L104",
+      "_java_ret": "ApplicationRunner",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion",
+      "label": "Promotion.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "label": "Promotion",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_java_entity",
+      "label": "Entity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_java_table",
+      "label": "Table",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_promotion",
+      "label": ".Promotion()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getid",
+      "label": ".getId()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getofferkey",
+      "label": ".getOfferKey()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettitle",
+      "label": ".getTitle()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getcategory",
+      "label": ".getCategory()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettargetsegment",
+      "label": ".getTargetSegment()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getbenefitsummary",
+      "label": ".getBenefitSummary()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettermsandconditions",
+      "label": ".getTermsAndConditions()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_geteligibility",
+      "label": ".getEligibility()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getvaliduntil",
+      "label": ".getValidUntil()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_isactive",
+      "label": ".isActive()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L30",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_equals",
+      "label": ".equals()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_java_override",
+      "label": "Override",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_hashcode",
+      "label": ".hashCode()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotionrepository",
+      "label": "PromotionRepository.java",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "label": "PromotionRepository",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "jparepository",
+      "label": "JpaRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository_catalogue",
+      "label": ".catalogue()",
+      "file_type": "code",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_main_java_com_nova_bank_offers_promotionrepository_java_query",
+      "label": "Query",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
     },
     {
       "id": "backend_src_main_java_com_nova_bank_portfolio_account",
@@ -4036,6 +4683,387 @@
       "community": 2
     },
     {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "label": "OfferTests.java",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "label": "OfferTests",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L17",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_id",
+      "label": ".id()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L25",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "fromString",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L25"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_resetfeaturefixtures",
+      "label": ".resetFeatureFixtures()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L27",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L27"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_java_override",
+      "label": "Override",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_exactfixturespersistandseeddoesnotresetchanges",
+      "label": ".exactFixturesPersistAndSeedDoesNotResetChanges()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L29",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getOfferKey",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L36"
+          },
+          {
+            "callee": "getTitle",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L36"
+          },
+          {
+            "callee": "getTermsAndConditions",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L36"
+          },
+          {
+            "callee": "getCategory",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L37"
+          },
+          {
+            "callee": "getTargetSegment",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L38"
+          },
+          {
+            "callee": "getEligibility",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L39"
+          },
+          {
+            "callee": "getBenefitSummary",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L39"
+          },
+          {
+            "callee": "getValidUntil",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L40"
+          },
+          {
+            "callee": "parse",
+            "receiver_type": "LocalDate",
+            "lang": "java",
+            "line": "L40"
+          },
+          {
+            "callee": "isActive",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L40"
+          },
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L42"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_servicecataloguesandproductsmatchapprovedboundaries",
+      "label": ".serviceCataloguesAndProductsMatchApprovedBoundaries()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L48",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_dateboundaryandinactivecampaignsfailclosed",
+      "label": ".dateBoundaryAndInactiveCampaignsFailClosed()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L60",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "parse",
+            "receiver_type": "LocalDate",
+            "lang": "java",
+            "line": "L61"
+          },
+          {
+            "callee": "list",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L63"
+          },
+          {
+            "callee": "detail",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L63"
+          },
+          {
+            "callee": "expressInterest",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L64"
+          },
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L67"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L71"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_servicerejectswrongsegmentunknownexpiredandmissingidentity",
+      "label": ".serviceRejectsWrongSegmentUnknownExpiredAndMissingIdentity()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L74",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "randomUUID",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L79"
+          },
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L85"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L87"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_repeatedinterestreturnssamepersistedidentityandtimestamp",
+      "label": ".repeatedInterestReturnsSamePersistedIdentityAndTimestamp()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L90",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "message",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L91"
+          },
+          {
+            "callee": "id",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L94"
+          },
+          {
+            "callee": "promotionId",
+            "receiver_type": "var",
+            "lang": "java",
+            "line": "L94"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L95"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httphappypathsandsegmentoverridecannotleak",
+      "label": ".httpHappyPathsAndSegmentOverrideCannotLeak()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L102",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L105"
+          },
+          {
+            "callee": "readTree",
+            "receiver_type": "ObjectMapper",
+            "lang": "java",
+            "line": "L111"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L114"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httpdenialsvalidateidentitywithoutmetadata",
+      "label": ".httpDenialsValidateIdentityWithoutMetadata()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L117",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L123"
+          },
+          {
+            "callee": "randomUUID",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L124"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L129"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_everyhttpendpointrequiresactivebearer",
+      "label": ".everyHttpEndpointRequiresActiveBearer()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L132",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L135"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_databaseenforcescampaignandinterestintegrity",
+      "label": ".databaseEnforcesCampaignAndInterestIntegrity()",
+      "file_type": "code",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L139",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "update",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L140"
+          },
+          {
+            "callee": "randomUUID",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L144"
+          },
+          {
+            "callee": "queryForObject",
+            "receiver_type": "JdbcTemplate",
+            "lang": "java",
+            "line": "L149"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_test_java_com_nova_bank_portfolio_portfoliotests",
       "label": "PortfolioTests.java",
       "file_type": "code",
@@ -5540,6 +6568,14 @@
       },
       "_origin": "ast",
       "community": 14
+    },
+    {
+      "id": "frontend_e2e_offers_spec",
+      "label": "offers.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
     },
     {
       "id": "frontend_e2e_portfolio_spec",
@@ -7245,6 +8281,398 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service",
+      "label": "offer.service.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_category",
+      "label": "Category",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L5",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_product",
+      "label": "Product",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_offer",
+      "label": "Offer",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_interest",
+      "label": "Interest",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_offerservice",
+      "label": "OfferService",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L14",
+      "_callable": true,
+      "_callable_class": true,
+      "_ts_fields": {
+        "api": "ApiService"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_ts_injectable",
+      "label": "Injectable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_offerservice_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_offerservice_products",
+      "label": ".products()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_offerservice_list",
+      "label": ".list()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_offerservice_detail",
+      "label": ".detail()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offer_service_offerservice_expressinterest",
+      "label": ".expressInterest()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component",
+      "label": "offers.component.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent",
+      "label": "OffersComponent",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L12",
+      "_callable": true,
+      "_callable_class": true,
+      "_ts_fields": {
+        "catalogueRead": "Subscription",
+        "client": "OfferService",
+        "destroyRef": "DestroyRef",
+        "detailRead": "Subscription",
+        "notices": "NotificationService",
+        "route": "ActivatedRoute",
+        "router": "Router"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_ts_component",
+      "label": "Component",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_ts_viewchild",
+      "label": "ViewChild",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_ngoninit",
+      "label": ".ngOnInit()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_load",
+      "label": ".load()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L50",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "unsubscribe",
+            "receiver_type": "Subscription",
+            "lang": "typescript",
+            "line": "L51"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_visibleproducts",
+      "label": ".visibleProducts()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L59",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_visibleoffers",
+      "label": ".visibleOffers()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L61",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_remember",
+      "label": ".remember()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L63",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_loaddetail",
+      "label": ".loadDetail()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L65",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "unsubscribe",
+            "receiver_type": "Subscription",
+            "lang": "typescript",
+            "line": "L67"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_close",
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L76",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "navigate",
+            "receiver_type": "Router",
+            "lang": "typescript",
+            "line": "L79"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_backdrop",
+      "label": ".backdrop()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L84",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_expressinterest",
+      "label": ".expressInterest()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L86",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_restorecataloguefocus",
+      "label": ".restoreCatalogueFocus()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L95",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_releasedialog",
+      "label": ".releaseDialog()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L100",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "unsubscribe",
+            "receiver_type": "Subscription",
+            "lang": "typescript",
+            "line": "L101"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_component_offerscomponent_ngondestroy",
+      "label": ".ngOnDestroy()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L106",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "unsubscribe",
+            "receiver_type": "Subscription",
+            "lang": "typescript",
+            "line": "L106"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec",
+      "label": "offers.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec_offer",
+      "label": "offer",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec_card",
+      "label": "card",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec_interest",
+      "label": "interest",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec_setup",
+      "label": "setup()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec_catalogue",
+      "label": "catalogue()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec_click",
+      "label": "click()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_offers_offers_spec_open",
+      "label": "open()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
     },
     {
       "id": "frontend_src_app_portfolio_portfolio_component",
@@ -9384,7 +10812,7 @@
     },
     {
       "source": "backend_src_main_java_com_nova_bank_auth_authcontroller_authcontroller_login",
-      "target": "postmapping",
+      "target": "backend_src_main_java_com_nova_bank_auth_authcontroller_java_postmapping",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/main/java/com/nova/bank/auth/AuthController.java",
@@ -9405,7 +10833,7 @@
     },
     {
       "source": "backend_src_main_java_com_nova_bank_auth_authcontroller_authcontroller_logout",
-      "target": "postmapping",
+      "target": "backend_src_main_java_com_nova_bank_auth_authcontroller_java_postmapping",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/main/java/com/nova/bank/auth/AuthController.java",
@@ -11409,6 +12837,1219 @@
       "source_file": "backend/src/main/java/com/nova/bank/config/SecurityConfig.java",
       "source_location": "L36",
       "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller",
+      "target": "org_springframework_http_responseentity",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller",
+      "target": "org_springframework_security_core_authentication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_restcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_requestmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_offercontroller",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_products",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_products",
+      "target": "org_springframework_security_core_authentication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_products",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_products",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_product",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_products",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list",
+      "target": "org_springframework_security_core_authentication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_list",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
+      "target": "org_springframework_security_core_authentication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_getmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_interest",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_interest",
+      "target": "org_springframework_security_core_authentication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_interest",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_interest",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_interest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_interest",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_java_postmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_parseid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_detail",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_parseid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_interest",
+      "target": "backend_src_main_java_com_nova_bank_offers_offercontroller_offercontroller_parseid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferController.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerdtos",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos_offerdtos",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_product",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerdtos_offerdtos",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_interest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferDtos.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "org_springframework_boot_applicationrunner",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "org_springframework_http_httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "org_springframework_jdbc_core_jdbctemplate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "org_springframework_stereotype_service",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "org_springframework_stereotype_service",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "org_springframework_jdbc_core_jdbctemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerservice",
+      "target": "org_springframework_jdbc_core_jdbctemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_products",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_products",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_product",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_products",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_expressinterest",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_expressinterest",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_interest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_expressinterest",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_segment",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L76",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_offer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L76",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_clearinterests",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_clearinterests",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L82",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_seedpromotions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_seedpromotions",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "target": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "target": "org_springframework_boot_applicationrunner",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_offerseed",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_products",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_segment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_segment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_detail",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_expressinterest",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_segment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_java_entity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_java_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_promotion",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getofferkey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettitle",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getcategory",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettargetsegment",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getbenefitsummary",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettermsandconditions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_geteligibility",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getvaliduntil",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_isactive",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_equals",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_equals",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_java_override",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_hashcode",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_hashcode",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_java_override",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/Promotion.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository",
+      "target": "org_springframework_stereotype_repository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository",
+      "target": "org_springframework_stereotype_repository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "target": "jparepository",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "target": "org_springframework_stereotype_repository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository_catalogue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository_catalogue",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository_catalogue",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotionrepository_java_query",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/offers/PromotionRepository.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "attribute",
       "_origin": "ast"
     },
     {
@@ -14310,6 +16951,334 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "org_springframework_dao_dataintegrityviolationexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "org_springframework_http_httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_id",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_resetfeaturefixtures",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_resetfeaturefixtures",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_java_override",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_exactfixturespersistandseeddoesnotresetchanges",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_exactfixturespersistandseeddoesnotresetchanges",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_servicecataloguesandproductsmatchapprovedboundaries",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_servicecataloguesandproductsmatchapprovedboundaries",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L48",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_dateboundaryandinactivecampaignsfailclosed",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_dateboundaryandinactivecampaignsfailclosed",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L60",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_servicerejectswrongsegmentunknownexpiredandmissingidentity",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_servicerejectswrongsegmentunknownexpiredandmissingidentity",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_repeatedinterestreturnssamepersistedidentityandtimestamp",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_repeatedinterestreturnssamepersistedidentityandtimestamp",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L90",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httphappypathsandsegmentoverridecannotleak",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httphappypathsandsegmentoverridecannotleak",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L102",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httpdenialsvalidateidentitywithoutmetadata",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httpdenialsvalidateidentitywithoutmetadata",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L117",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_everyhttpendpointrequiresactivebearer",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_everyhttpendpointrequiresactivebearer",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L132",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests",
+      "target": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_databaseenforcescampaignandinterestintegrity",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_databaseenforcescampaignandinterestintegrity",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L139",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_test_java_com_nova_bank_portfolio_portfoliotests",
       "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
       "relation": "imports",
@@ -16384,6 +19353,94 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_e2e_offers_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_offers_spec",
+      "target": "frontend_e2e_helpers",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_offers_spec",
+      "target": "frontend_e2e_helpers_captureconsole",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_offers_spec",
+      "target": "frontend_e2e_helpers_uilogin",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_offers_spec",
+      "target": "frontend_src_app_offers_offer_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_offers_spec",
+      "target": "frontend_src_app_offers_offer_service_offer",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_offers_spec",
+      "target": "frontend_src_app_offers_offer_service_interest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_offers_spec",
+      "target": "frontend_src_app_offers_offer_service_product",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/offers.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_e2e_portfolio_spec",
       "target": "ref_playwright_test",
       "relation": "imports_from",
@@ -18013,6 +21070,14 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_app_routes",
+      "target": "frontend_src_app_offers_offers_component",
+      "relation": "dynamic_import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/app.routes.ts",
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_auth_auth_service",
       "target": "ref_angular_core",
       "relation": "imports_from",
@@ -19060,6 +22125,811 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/shell.component.ts",
       "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "ref_rxjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "frontend_src_app_core_api_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "frontend_src_app_core_api_service_apiservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "frontend_src_app_offers_offer_service_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "frontend_src_app_offers_offer_service_product",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "frontend_src_app_offers_offer_service_offer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "frontend_src_app_offers_offer_service_interest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service",
+      "target": "frontend_src_app_offers_offer_service_offerservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice",
+      "target": "frontend_src_app_offers_offer_service_ts_injectable",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice",
+      "target": "frontend_src_app_offers_offer_service_offerservice_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice",
+      "target": "frontend_src_app_offers_offer_service_offerservice_products",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice",
+      "target": "frontend_src_app_offers_offer_service_offerservice_list",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice",
+      "target": "frontend_src_app_offers_offer_service_offerservice_detail",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice",
+      "target": "frontend_src_app_offers_offer_service_offerservice_expressinterest",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "ref_angular_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "ref_angular_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "ref_rxjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "frontend_src_app_offers_offer_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "frontend_src_app_offers_offer_service_offer",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "frontend_src_app_offers_offer_service_offerservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "frontend_src_app_offers_offer_service_product",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "frontend_src_app_core_notification_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "frontend_src_app_core_notification_service_notificationservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_ts_component",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_ts_viewchild",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_ts_viewchild",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_ngoninit",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_load",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_visibleproducts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_visibleoffers",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_remember",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_loaddetail",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_close",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_backdrop",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_expressinterest",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_restorecataloguefocus",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_releasedialog",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_ngondestroy",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_ngoninit",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_loaddetail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_ngoninit",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_releasedialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_ngoninit",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_load",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_load",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_restorecataloguefocus",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_close",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_releasedialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_backdrop",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_close",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_releasedialog",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_close",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_ngondestroy",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent_releasedialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "ref_angular_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "ref_angular_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "ref_angular_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "ref_rxjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_component",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_component_offerscomponent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offer_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offer_service_offer",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offer_service_offerservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offer_service_interest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_core_notification_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_core_notification_service_notificationservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_offer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_card",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_interest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_setup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_catalogue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_click",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_open",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec_click",
+      "target": "frontend_src_app_offers_offers_spec_click",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec_open",
+      "target": "frontend_src_app_offers_offers_spec_click",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_setup",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_click",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offers_spec_catalogue",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20410,6 +24280,50 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_offers_offer_service_offer",
+      "target": "frontend_src_app_offers_offer_service_product",
+      "relation": "inherits",
+      "context": "type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice_constructor",
+      "target": "frontend_src_app_core_api_service_apiservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_constructor",
+      "target": "frontend_src_app_offers_offer_service_offerservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_constructor",
+      "target": "frontend_src_app_core_notification_service_notificationservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_portfolio_portfolio_component_portfoliocomponent_constructor",
       "target": "frontend_src_app_portfolio_portfolio_service_portfolioservice",
       "relation": "references",
@@ -20516,6 +24430,39 @@
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/nova/bank/config/SecurityConfig.java",
       "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_authservice_authservice",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20681,6 +24628,39 @@
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/nova/bank/auth/AuthTests.java",
       "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests",
+      "target": "backend_src_main_java_com_nova_bank_auth_userrepository_userrepository",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21134,6 +25114,90 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_servicecataloguesandproductsmatchapprovedboundaries",
+      "target": "backend_src_main_java_com_nova_bank_offers_offerdtos_product",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httphappypathsandsegmentoverridecannotleak",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httphappypathsandsegmentoverridecannotleak",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception_status",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httpdenialsvalidateidentitywithoutmetadata",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_httpdenialsvalidateidentitywithoutmetadata",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception_status",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_everyhttpendpointrequiresactivebearer",
+      "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_test_java_com_nova_bank_offers_offertests_offertests_everyhttpendpointrequiresactivebearer",
+      "target": "backend_src_main_java_com_nova_bank_common_apiexception_apiexception_status",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/test/java/com/nova/bank/offers/OfferTests.java",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_test_java_com_nova_bank_portfolio_portfoliotests_portfoliotests_httpownerandadminresponsesaresafeandexact",
       "target": "backend_src_test_java_com_nova_bank_testsupport_testsupport_login",
       "relation": "calls",
@@ -21338,6 +25402,18 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_offers_offers_spec",
+      "target": "frontend_src_app_offers_offer_service_offerservice_products",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offers.spec.ts",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_statements_statement_spec",
       "target": "frontend_src_app_auth_auth_service_authinterceptor",
       "relation": "indirect_call",
@@ -21466,6 +25542,114 @@
       "confidence_score": 0.85,
       "source_file": "frontend/src/app/core/shell.component.ts",
       "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice_products",
+      "target": "frontend_src_app_core_api_service_apiservice_get",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice_list",
+      "target": "frontend_src_app_core_api_service_apiservice_get",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice_detail",
+      "target": "frontend_src_app_core_api_service_apiservice_get",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offer_service_offerservice_expressinterest",
+      "target": "frontend_src_app_core_api_service_apiservice_post",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offer.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_load",
+      "target": "frontend_src_app_offers_offer_service_offerservice_products",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_load",
+      "target": "frontend_src_app_offers_offer_service_offerservice_list",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_loaddetail",
+      "target": "frontend_src_app_offers_offer_service_offerservice_detail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_expressinterest",
+      "target": "frontend_src_app_offers_offer_service_offerservice_expressinterest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_offers_offers_component_offerscomponent_expressinterest",
+      "target": "frontend_src_app_core_notification_service_notificationservice_show",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "frontend/src/app/offers/offers.component.ts",
+      "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21742,6 +25926,162 @@
       "confidence_score": 0.85,
       "source_file": "backend/src/main/java/com/nova/bank/config/SecurityConfig.java",
       "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_list",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotionrepository_promotionrepository_catalogue",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_isactive",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getvaliduntil",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_permitted",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettargetsegment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getofferkey",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettitle",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getcategory",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getbenefitsummary",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettermsandconditions",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_geteligibility",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_getvaliduntil",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_offers_offerservice_offerservice_dto",
+      "target": "backend_src_main_java_com_nova_bank_offers_promotion_promotion_gettargetsegment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/main/java/com/nova/bank/offers/OfferService.java",
+      "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -22152,8 +26492,8 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_activity_transaction_transaction_toitem",
-      "_tgt": "backend_src_main_java_com_nova_bank_activity_activitydtos_item"
+      "_src": "backend_src_main_java_com_nova_bank_activity_activitydtos_item",
+      "_tgt": "backend_src_main_java_com_nova_bank_activity_transaction_transaction_toitem"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_activity_activitydtos_activity",
@@ -22165,8 +26505,8 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_activity_activityservice_activityservice_activity",
-      "_tgt": "backend_src_main_java_com_nova_bank_activity_activitydtos_activity"
+      "_src": "backend_src_main_java_com_nova_bank_activity_activitydtos_activity",
+      "_tgt": "backend_src_main_java_com_nova_bank_activity_activityservice_activityservice_activity"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_activity_activitydtos_activity",
@@ -22178,8 +26518,8 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
-      "_src": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests_read",
-      "_tgt": "backend_src_main_java_com_nova_bank_activity_activitydtos_activity"
+      "_src": "backend_src_main_java_com_nova_bank_activity_activitydtos_activity",
+      "_tgt": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests_read"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_activity_activityservice_activityservice",
@@ -22191,7 +26531,20 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "_src": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests",
+      "_src": "backend_src_main_java_com_nova_bank_activity_activityservice_activityservice",
+      "_tgt": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_activity_activityservice_activityservice",
+      "target": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/statements/StatementTests.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
       "_tgt": "backend_src_main_java_com_nova_bank_activity_activityservice_activityservice"
     },
     {
@@ -22204,8 +26557,8 @@
       "weight": 1.0,
       "context": "generic_arg",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository",
-      "_tgt": "backend_src_main_java_com_nova_bank_activity_transaction_transaction"
+      "_src": "backend_src_main_java_com_nova_bank_activity_transaction_transaction",
+      "_tgt": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_activity_transaction_java_override",
@@ -22217,8 +26570,8 @@
       "weight": 1.0,
       "context": "attribute",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_activity_transaction_transaction_hashcode",
-      "_tgt": "backend_src_main_java_com_nova_bank_activity_transaction_java_override"
+      "_src": "backend_src_main_java_com_nova_bank_activity_transaction_java_override",
+      "_tgt": "backend_src_main_java_com_nova_bank_activity_transaction_transaction_hashcode"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository",
@@ -22230,21 +26583,47 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "_src": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests",
+      "_src": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository",
+      "_tgt": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository",
+      "target": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/statements/StatementService.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice",
       "_tgt": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository"
     },
     {
-      "source": "postmapping",
-      "target": "backend_src_main_java_com_nova_bank_auth_authcontroller_authcontroller_logout",
+      "source": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository",
+      "target": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice_statementservice",
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "backend/src/main/java/com/nova/bank/auth/AuthController.java",
-      "source_location": "L13",
+      "source_file": "backend/src/main/java/com/nova/bank/statements/StatementService.java",
+      "source_location": "L19",
       "weight": 1.0,
-      "context": "attribute",
+      "context": "parameter_type",
       "_origin": "ast",
-      "_src": "backend_src_main_java_com_nova_bank_auth_authcontroller_authcontroller_logout",
-      "_tgt": "postmapping"
+      "_src": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice_statementservice",
+      "_tgt": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository",
+      "target": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/statements/StatementTests.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
+      "_tgt": "backend_src_main_java_com_nova_bank_activity_transactionrepository_transactionrepository"
     },
     {
       "source": "backend_src_main_java_com_nova_bank_auth_authdtos_loginrequest",
@@ -22911,6 +27290,19 @@
     },
     {
       "source": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice",
+      "target": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/activity/ActivityTests.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice",
+      "_tgt": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice",
       "target": "backend_src_test_java_com_nova_bank_portfolio_portfoliotests_portfoliotests",
       "relation": "references",
       "confidence": "EXTRACTED",
@@ -22924,16 +27316,55 @@
     },
     {
       "source": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice",
-      "target": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests",
+      "target": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice",
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "backend/src/test/java/com/nova/bank/activity/ActivityTests.java",
-      "source_location": "L21",
+      "source_file": "backend/src/main/java/com/nova/bank/statements/StatementService.java",
+      "source_location": "L16",
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "_src": "backend_src_test_java_com_nova_bank_activity_activitytests_activitytests",
+      "_src": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice",
       "_tgt": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice",
+      "target": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice_statementservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/main/java/com/nova/bank/statements/StatementService.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "_src": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice_statementservice",
+      "_tgt": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice",
+      "target": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/statements/StatementTests.java",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
+      "_tgt": "backend_src_main_java_com_nova_bank_portfolio_portfolioservice_portfolioservice"
+    },
+    {
+      "source": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice",
+      "target": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/test/java/com/nova/bank/statements/StatementTests.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "_src": "backend_src_test_java_com_nova_bank_statements_statementtests_statementtests",
+      "_tgt": "backend_src_main_java_com_nova_bank_statements_statementservice_statementservice"
     },
     {
       "source": "inject",
@@ -22941,7 +27372,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/activity/activity.component.ts",
-      "source_location": "L27",
+      "source_location": "L31",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -22988,13 +27419,26 @@
       "_origin": "ast",
       "_src": "frontend_src_app_core_api_service_apiservice",
       "_tgt": "frontend_src_app_portfolio_portfolio_service_portfolioservice_constructor"
+    },
+    {
+      "source": "frontend_src_app_core_api_service_apiservice",
+      "target": "frontend_src_app_statements_statement_service_statementservice_constructor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/statements/statement.service.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "frontend_src_app_statements_statement_service_statementservice_constructor",
+      "_tgt": "frontend_src_app_core_api_service_apiservice"
     }
   ],
   "metadata": {
-    "built_at": "2026-11-16T07:05:18.680172+00:00",
+    "built_at": "2026-11-16T07:20:51.175257+00:00",
     "version": "graph_update-v1",
     "codebase_root": "/data/artifacts-v2/T0132PcJVCRTV008113112610542726/developer",
     "force": true,
-    "files_scanned": 343
+    "files_scanned": 361
   }
 }

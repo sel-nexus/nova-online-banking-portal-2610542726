@@ -1,0 +1,61 @@
+<section [class.content]="contact" aria-labelledby="support-title">
+  <div class="page-heading">
+    <div><p class="eyebrow">HELP &amp; SUPPORT</p><h1 id="support-title">{{contact ? 'Contact Us' : 'Customer Support'}}</h1><p class="muted">Demonstration only. No live call, email, SMS or support ticket is sent.</p></div>
+    @if (auth.session()) { <a routerLink="/home">Back to Home</a> } @else { <a routerLink="/login">Back to Sign in</a> }
+  </div>
+  @if (!auth.session()) {
+    <p class="advisory" role="status">Please sign in to view support information and send a simulated message. No contact information is loaded while signed out.</p>
+    <a routerLink="/login">Sign in to continue</a>
+  } @else {
+    @if (loading()) { <p role="status">Loading support content…</p> }
+    @if (error()) { <p role="alert">{{error()}}</p> }
+    @if (!content() && !loading()) { <button type="button" (click)="load()">Retry support content</button> }
+    @if (content(); as directory) {
+      @if (!contact) {
+        <section aria-labelledby="directory-title">
+          <h2 id="directory-title">Ways to reach us</h2>
+          <div class="support-grid">
+            @for (channel of directory.contacts; track channel.title) {
+              <article><h3>{{channel.title}}</h3><p>{{channel.detail}}</p><p class="muted">{{channel.hours}}</p><p class="small muted">{{channel.description}}</p>
+                @if (channel.title === 'Secure Message') { <a routerLink="/contact">Send a secure message (Simulated)</a> }
+                @if (channel.title === 'Find a Branch / ATM') { <a href="#branches">View branch and ATM directory</a> }
+              </article>
+            }
+          </div>
+        </section>
+        <section id="branches" aria-labelledby="branches-title" class="support-section">
+          <h2 id="branches-title">Metro Manila branches &amp; ATMs</h2>
+          <div class="support-grid">
+            @for (branch of directory.branches; track branch.name) { <article><h3>{{branch.name}}</h3><p>{{branch.address}}</p><p>{{branch.description}}</p><p class="muted">{{branch.hours}}</p></article> }
+          </div>
+        </section>
+        <section aria-labelledby="faq-title" class="support-section">
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <label for="faq-search">Search FAQs</label><input id="faq-search" type="search" [value]="search()" (input)="searchFaq($any($event.target).value)">
+          <p role="status" class="small muted">{{faqs().length}} questions found</p>
+          @for (faq of faqs(); track faq.id) {
+            <article class="faq-item"><h3><button type="button" [attr.aria-expanded]="expanded() === faq.id" [attr.aria-controls]="'faq-' + faq.id" (click)="toggleFaq(faq.id)">{{faq.question}}</button></h3>
+              <div [id]="'faq-' + faq.id" [hidden]="expanded() !== faq.id"><p>{{faq.answer}}</p></div>
+            </article>
+          } @empty { <p role="status">No FAQs found. Broaden your search.</p> }
+        </section>
+        <p><a routerLink="/contact">Contact Us</a></p>
+      } @else {
+        <a routerLink="/support">Back to Support</a>
+        <form class="support-form" [formGroup]="form" (ngSubmit)="send()" novalidate [attr.aria-busy]="sending()">
+          <label for="inquiry-topic">Topic</label>
+          <select id="inquiry-topic" formControlName="topic" aria-required="true" [attr.aria-invalid]="!!fieldError('topic')" aria-describedby="topic-error"><option value="">Select a topic</option>@for (topic of directory.topics; track topic) { <option [value]="topic">{{topic}}</option> }</select>
+          <p id="topic-error" class="field-error" role="alert">{{fieldError('topic')}}</p>
+          <label for="inquiry-subject">Subject</label>
+          <input id="inquiry-subject" formControlName="subject" maxlength="150" aria-required="true" [attr.aria-invalid]="!!fieldError('subject')" aria-describedby="subject-error">
+          <p id="subject-error" class="field-error" role="alert">{{fieldError('subject')}}</p>
+          <label for="inquiry-message">Message</label>
+          <textarea id="inquiry-message" formControlName="message" maxlength="5000" rows="6" aria-required="true" [attr.aria-invalid]="!!fieldError('message')" aria-describedby="message-error message-guidance"></textarea>
+          <p id="message-error" class="field-error" role="alert">{{fieldError('message')}}</p><p id="message-guidance" class="small muted">Do not include passwords, full account numbers or other sensitive information. This is an online enquiry simulation; estimated response 24h is sample guidance, not a delivery promise.</p>
+          <button type="submit" class="primary" [disabled]="sending()">{{sending() ? 'Recording message…' : 'Send Message (Simulated)'}}</button>
+        </form>
+        @if (receipt(); as result) { <div class="advisory" role="status" aria-live="polite"><h2>Message recorded (Simulated)</h2><p>Reference #{{result.referenceNumber}} · {{result.status}} · Estimated response {{result.estimatedResponse}}</p><p>No live agent was contacted. No third-party email or SMS was sent.</p></div> }
+      }
+    }
+  }
+</section>
